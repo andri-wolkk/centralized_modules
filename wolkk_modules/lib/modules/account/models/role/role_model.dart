@@ -1,4 +1,4 @@
-import 'package:wolkk_core/core.dart';
+import 'package:wolkk_core/wolkk_core.dart';
 
 part 'role_model.freezed.dart';
 part 'role_model.g.dart';

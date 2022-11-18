@@ -6,7 +6,7 @@
             "name": "Account",
             "id": "1234567890",
             "operation": [
-                "create",
+                "add",
                 "update"
             ],
             "path": "/account"
@@ -16,7 +16,7 @@
             "name": "Cashier",
             "id": "0987654321",
             "operation": [
-                "read"
+                "get"
             ],
             "path": "/cashier"
         }

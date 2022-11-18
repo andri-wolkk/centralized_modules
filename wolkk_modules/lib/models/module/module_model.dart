@@ -1,9 +1,9 @@
-import 'package:wolkk_core/core.dart';
+import 'package:wolkk_core/wolkk_core.dart';
 
 part 'module_model.freezed.dart';
 part 'module_model.g.dart';
 
-enum Operation { create, delete, read, update }
+enum Operation { add, delete, get, getList, update }
 
 enum Module { account, cashier }
 

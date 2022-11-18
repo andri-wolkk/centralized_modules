@@ -1,4 +1,4 @@
-import 'package:wolkk_core/core.dart';
+import 'package:wolkk_core/wolkk_core.dart';
 
 class CashierMainPage extends StatefulWidget {
   const CashierMainPage({super.key});

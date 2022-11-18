@@ -1,4 +1,4 @@
-import 'package:wolkk_core/core.dart';
+import 'package:wolkk_core/wolkk_core.dart';
 
 import '../role/role_model.dart';
 

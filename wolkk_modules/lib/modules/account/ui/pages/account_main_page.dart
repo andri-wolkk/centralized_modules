@@ -1,4 +1,4 @@
-import 'package:wolkk_core/core.dart';
+import 'package:wolkk_core/wolkk_core.dart';
 
 class AccountMainPage extends StatefulWidget {
   const AccountMainPage({super.key});
@@ -11,7 +11,7 @@ class _AccountMainPageState extends State<AccountMainPage> {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('Account Page...'),
+      child: Text('Account Main Page...'),
     );
   }
 }

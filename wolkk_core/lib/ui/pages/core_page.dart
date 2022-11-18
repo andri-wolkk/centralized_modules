@@ -1,7 +1,12 @@
-part of core;
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../panels/core_panel.dart';
 
 class CorePage extends StatelessWidget {
-  const CorePage({super.key});
+  const CorePage({super.key, required this.corePanel});
+
+  final CorePanel corePanel;
 
   @override
   Widget build(BuildContext context) {
@@ -16,22 +21,22 @@ class CorePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Container(
+                  SizedBox(
                     height: 85.w,
-                    color: Colors.blueAccent,
+                    child: corePanel.panel.header,
                   ),
                   Expanded(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Container(
+                        SizedBox(
                           width: 85.w,
-                          color: Colors.redAccent,
+                          child: corePanel.panel.navigation,
                         ),
                         Expanded(
                           child: Container(
-                            color: Colors.greenAccent,
+                            child: corePanel.panel.main,
                           ),
                         ),
                       ],
@@ -40,9 +45,12 @@ class CorePage extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              width: 450.w,
-              color: Colors.yellowAccent,
+            SizedBox(
+              width: corePanel.panel.secondary.toString() ==
+                      const SizedBox.shrink().toString()
+                  ? 0.w
+                  : 450.w,
+              child: corePanel.panel.secondary,
             ),
           ],
         ),

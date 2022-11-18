@@ -33,8 +33,9 @@ const _$ModuleEnumMap = {
 };
 
 const _$OperationEnumMap = {
-  Operation.create: 'create',
+  Operation.add: 'add',
   Operation.delete: 'delete',
-  Operation.read: 'read',
+  Operation.get: 'get',
+  Operation.getList: 'getList',
   Operation.update: 'update',
 };

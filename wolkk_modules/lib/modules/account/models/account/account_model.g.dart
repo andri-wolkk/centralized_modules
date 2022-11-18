@@ -12,7 +12,7 @@ _$_AccountModel _$$_AccountModelFromJson(Map<String, dynamic> json) =>
       image: json['image'] as String,
       name: json['name'] as String,
       pin: json['pin'] as String,
-      role: json['role'],
+      role: RoleModel.fromJson(json['role'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_AccountModelToJson(_$_AccountModel instance) =>

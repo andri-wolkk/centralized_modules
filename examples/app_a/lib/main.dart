@@ -1,6 +1,6 @@
-import 'package:wolkk_modules/modules.dart';
+import 'package:wolkk_modules/wolkk_modules.dart';
 
-import 'pages/main_pages.dart';
+import 'pages/main_page.dart';
 
 void main() {
   runApp(const App());
@@ -16,8 +16,15 @@ class App extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, state) {
-        return const MaterialApp(
-          home: MainPage(),
+        return MultiBlocProvider(
+          providers: [
+            BlocProvider<ModuleCubit>(
+              create: (BuildContext context) => ModuleCubit(),
+            ),
+          ],
+          child: const MaterialApp(
+            home: MainPage(),
+          ),
         );
       },
     );

@@ -39,6 +39,8 @@ abstract class $AccountModelCopyWith<$Res> {
       _$AccountModelCopyWithImpl<$Res, AccountModel>;
   @useResult
   $Res call({String id, String image, String name, String pin, RoleModel role});
+
+  $RoleModelCopyWith<$Res> get role;
 }
 
 /// @nodoc
@@ -83,6 +85,14 @@ class _$AccountModelCopyWithImpl<$Res, $Val extends AccountModel>
               as RoleModel,
     ) as $Val);
   }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $RoleModelCopyWith<$Res> get role {
+    return $RoleModelCopyWith<$Res>(_value.role, (value) {
+      return _then(_value.copyWith(role: value) as $Val);
+    });
+  }
 }
 
 /// @nodoc
@@ -94,6 +104,9 @@ abstract class _$$_AccountModelCopyWith<$Res>
   @override
   @useResult
   $Res call({String id, String image, String name, String pin, RoleModel role});
+
+  @override
+  $RoleModelCopyWith<$Res> get role;
 }
 
 /// @nodoc
@@ -176,13 +189,12 @@ class _$_AccountModel implements _AccountModel {
             (identical(other.image, image) || other.image == image) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.pin, pin) || other.pin == pin) &&
-            const DeepCollectionEquality().equals(other.role, role));
+            (identical(other.role, role) || other.role == role));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, image, name, pin,
-      const DeepCollectionEquality().hash(role));
+  int get hashCode => Object.hash(runtimeType, id, image, name, pin, role);
 
   @JsonKey(ignore: true)
   @override
