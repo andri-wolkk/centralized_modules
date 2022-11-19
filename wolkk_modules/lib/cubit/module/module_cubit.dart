@@ -6,6 +6,7 @@ import '../../repositories/repositories.dart';
 part 'module_cubit.freezed.dart';
 part 'module_state.dart';
 
+@singleton
 class ModuleCubit extends Cubit<ModuleState> {
   ModuleCubit() : super(const ModuleState.initial());
 

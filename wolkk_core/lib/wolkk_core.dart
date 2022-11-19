@@ -9,6 +9,8 @@ export 'package:flutter/services.dart';
 export 'package:flutter_bloc/flutter_bloc.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:freezed_annotation/freezed_annotation.dart';
+export 'package:get_it/get_it.dart';
+export 'package:injectable/injectable.dart' hide Module;
 
 export 'error/error.dart';
 export 'models/models.dart';

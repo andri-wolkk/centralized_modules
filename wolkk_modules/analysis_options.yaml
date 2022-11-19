@@ -2,3 +2,6 @@ include: package:flutter_lints/flutter.yaml
 analyzer:
   exclude:
     - "**/*.g.dart"
+linter:
+  rules:
+    depend_on_referenced_packages: false
