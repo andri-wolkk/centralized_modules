@@ -2,29 +2,34 @@ import 'package:wolkk_core/wolkk_core.dart';
 
 import '../../../models/models.dart';
 
-abstract class IModuleLocalRepository {
-  Future<Either<LocalFailure, List<ModuleModel>>> fetchModules(String source);
+abstract class ModuleLocalRepository {
+  Future<Either<LocalFailure, List<ModuleModel>>> fetchModules({
+    required String key,
+    required String source,
+  });
 }
 
-class ModuleLocalRepository implements IModuleLocalRepository {
+@LazySingleton(as: ModuleLocalRepository)
+class ModuleLocalRepositoryImpl implements ModuleLocalRepository {
+  List<ModuleModel> listModule = <ModuleModel>[];
+
   @override
-  Future<Either<LocalFailure, List<ModuleModel>>> fetchModules(
-    String source,
-  ) async {
+  Future<Either<LocalFailure, List<ModuleModel>>> fetchModules({
+    required String key,
+    required String source,
+  }) async {
     try {
       var response = await rootBundle.loadString(source);
       final data = await json.decode(response);
       if (data.isNotEmpty) {
-        List<ModuleModel> listProductModel = <ModuleModel>[];
-        data['modules'].forEach((value) {
-          listProductModel.add(ModuleModel.fromJson(value));
+        listModule.clear();
+        data[key].forEach((value) {
+          listModule.add(ModuleModel.fromJson(value));
         });
-        return Right(listProductModel);
+        return Right(listModule);
       } else {
         return const Left(
-          LocalFailure(
-              code: 'UNEXPECTED_FAILURE',
-              message: 'Failed to fetch product in local source...'),
+          LocalFailure(code: 'NO DATA FAILURE', message: 'No Data Found...'),
         );
       }
     } catch (e) {

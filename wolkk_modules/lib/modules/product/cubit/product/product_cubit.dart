@@ -1,35 +1,35 @@
 import 'package:wolkk_core/wolkk_core.dart';
 
-import '../../models/models.dart';
+import '../../models/product/product_model.dart';
 import '../../repositories/repositories.dart';
 
-part 'module_cubit.freezed.dart';
-part 'module_state.dart';
+part 'product_cubit.freezed.dart';
+part 'product_state.dart';
 
 @singleton
-class ModuleCubit extends Cubit<ModuleState> {
-  ModuleCubit({required this.moduleLocalRepository})
-      : super(const ModuleState.initial());
+class ProductCubit extends Cubit<ProductState> {
+  ProductCubit({required this.productRemoteRepository})
+      : super(const ProductState.initial());
 
-  final ModuleLocalRepository moduleLocalRepository;
-  List<ModuleModel> modules = [];
+  final ProductRemoteRepository productRemoteRepository;
+  List<ProductModel> products = [];
 
-  void fetchModules({required String key, required String source}) async {
+  void fetchProducts({required String key, required String source}) async {
     try {
-      final result = await moduleLocalRepository.fetchModules(
+      final result = await productRemoteRepository.fetchProducts(
         key: key,
         source: source,
       );
       result.fold(
         (l) {
           if (l is Failure) {
-            emit(Failure(code: 'LOCAL FAILURE', message: l.message));
+            emit(Failure(code: 'SERVER FAILURE', message: l.message));
           }
         },
         (r) {
           if (r.isNotEmpty) {
-            modules = r;
-            emit(Fetched(modules: modules));
+            products = r;
+            emit(Fetched(products: products));
           }
           if (r.isEmpty) {
             emit(

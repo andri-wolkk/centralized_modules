@@ -3,9 +3,9 @@
     "modules": [
         {
             "icon": "https://cdn-icons-png.flaticon.com/512/8914/8914179.png",
-            "name": "Account",
+            "name": "account",
             "id": "1234567890",
-            "operation": [
+            "operations": [
                 "add",
                 "update"
             ],
@@ -13,9 +13,9 @@
         },
         {
             "icon": "https://cdn-icons-png.flaticon.com/512/3977/3977513.png",
-            "name": "Cashier",
+            "name": "cashier",
             "id": "0987654321",
-            "operation": [
+            "operations": [
                 "get"
             ],
             "path": "/cashier"

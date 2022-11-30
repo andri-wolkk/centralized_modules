@@ -2,7 +2,9 @@ import 'package:wolkk_modules/wolkk_modules.dart';
 
 import 'pages/main_page.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await configureDependencies('environment');
   runApp(const App());
 }
 
@@ -18,9 +20,8 @@ class App extends StatelessWidget {
       builder: (context, state) {
         return MultiBlocProvider(
           providers: [
-            BlocProvider<ModuleCubit>(
-              create: (BuildContext context) => ModuleCubit(),
-            ),
+            BlocProvider.value(value: GetIt.I<ModuleCubit>()),
+            BlocProvider.value(value: GetIt.I<ProductCubit>()),
           ],
           child: const MaterialApp(
             home: MainPage(),

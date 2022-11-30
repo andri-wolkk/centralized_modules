@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'module_cubit.dart';
+part of 'product_cubit.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,26 +15,26 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$ModuleState {
+mixin _$ProductState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String code, String message, String? statusCode)
         failure,
-    required TResult Function(List<ModuleModel> modules) fetched,
+    required TResult Function(List<ProductModel> products) fetched,
     required TResult Function() initial,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String code, String message, String? statusCode)? failure,
-    TResult? Function(List<ModuleModel> modules)? fetched,
+    TResult? Function(List<ProductModel> products)? fetched,
     TResult? Function()? initial,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String code, String message, String? statusCode)? failure,
-    TResult Function(List<ModuleModel> modules)? fetched,
+    TResult Function(List<ProductModel> products)? fetched,
     TResult Function()? initial,
     required TResult orElse(),
   }) =>
@@ -64,16 +64,16 @@ mixin _$ModuleState {
 }
 
 /// @nodoc
-abstract class $ModuleStateCopyWith<$Res> {
-  factory $ModuleStateCopyWith(
-          ModuleState value, $Res Function(ModuleState) then) =
-      _$ModuleStateCopyWithImpl<$Res, ModuleState>;
+abstract class $ProductStateCopyWith<$Res> {
+  factory $ProductStateCopyWith(
+          ProductState value, $Res Function(ProductState) then) =
+      _$ProductStateCopyWithImpl<$Res, ProductState>;
 }
 
 /// @nodoc
-class _$ModuleStateCopyWithImpl<$Res, $Val extends ModuleState>
-    implements $ModuleStateCopyWith<$Res> {
-  _$ModuleStateCopyWithImpl(this._value, this._then);
+class _$ProductStateCopyWithImpl<$Res, $Val extends ProductState>
+    implements $ProductStateCopyWith<$Res> {
+  _$ProductStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -91,7 +91,7 @@ abstract class _$$FailureCopyWith<$Res> {
 
 /// @nodoc
 class __$$FailureCopyWithImpl<$Res>
-    extends _$ModuleStateCopyWithImpl<$Res, _$Failure>
+    extends _$ProductStateCopyWithImpl<$Res, _$Failure>
     implements _$$FailureCopyWith<$Res> {
   __$$FailureCopyWithImpl(_$Failure _value, $Res Function(_$Failure) _then)
       : super(_value, _then);
@@ -134,7 +134,7 @@ class _$Failure implements Failure {
 
   @override
   String toString() {
-    return 'ModuleState.failure(code: $code, message: $message, statusCode: $statusCode)';
+    return 'ProductState.failure(code: $code, message: $message, statusCode: $statusCode)';
   }
 
   @override
@@ -162,7 +162,7 @@ class _$Failure implements Failure {
   TResult when<TResult extends Object?>({
     required TResult Function(String code, String message, String? statusCode)
         failure,
-    required TResult Function(List<ModuleModel> modules) fetched,
+    required TResult Function(List<ProductModel> products) fetched,
     required TResult Function() initial,
   }) {
     return failure(code, message, statusCode);
@@ -172,7 +172,7 @@ class _$Failure implements Failure {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String code, String message, String? statusCode)? failure,
-    TResult? Function(List<ModuleModel> modules)? fetched,
+    TResult? Function(List<ProductModel> products)? fetched,
     TResult? Function()? initial,
   }) {
     return failure?.call(code, message, statusCode);
@@ -182,7 +182,7 @@ class _$Failure implements Failure {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String code, String message, String? statusCode)? failure,
-    TResult Function(List<ModuleModel> modules)? fetched,
+    TResult Function(List<ProductModel> products)? fetched,
     TResult Function()? initial,
     required TResult orElse(),
   }) {
@@ -227,7 +227,7 @@ class _$Failure implements Failure {
   }
 }
 
-abstract class Failure implements ModuleState {
+abstract class Failure implements ProductState {
   const factory Failure(
       {required final String code,
       required final String message,
@@ -246,12 +246,12 @@ abstract class _$$FetchedCopyWith<$Res> {
   factory _$$FetchedCopyWith(_$Fetched value, $Res Function(_$Fetched) then) =
       __$$FetchedCopyWithImpl<$Res>;
   @useResult
-  $Res call({List<ModuleModel> modules});
+  $Res call({List<ProductModel> products});
 }
 
 /// @nodoc
 class __$$FetchedCopyWithImpl<$Res>
-    extends _$ModuleStateCopyWithImpl<$Res, _$Fetched>
+    extends _$ProductStateCopyWithImpl<$Res, _$Fetched>
     implements _$$FetchedCopyWith<$Res> {
   __$$FetchedCopyWithImpl(_$Fetched _value, $Res Function(_$Fetched) _then)
       : super(_value, _then);
@@ -259,13 +259,13 @@ class __$$FetchedCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? modules = null,
+    Object? products = null,
   }) {
     return _then(_$Fetched(
-      modules: null == modules
-          ? _value._modules
-          : modules // ignore: cast_nullable_to_non_nullable
-              as List<ModuleModel>,
+      products: null == products
+          ? _value._products
+          : products // ignore: cast_nullable_to_non_nullable
+              as List<ProductModel>,
     ));
   }
 }
@@ -273,19 +273,19 @@ class __$$FetchedCopyWithImpl<$Res>
 /// @nodoc
 
 class _$Fetched implements Fetched {
-  const _$Fetched({required final List<ModuleModel> modules})
-      : _modules = modules;
+  const _$Fetched({required final List<ProductModel> products})
+      : _products = products;
 
-  final List<ModuleModel> _modules;
+  final List<ProductModel> _products;
   @override
-  List<ModuleModel> get modules {
+  List<ProductModel> get products {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_modules);
+    return EqualUnmodifiableListView(_products);
   }
 
   @override
   String toString() {
-    return 'ModuleState.fetched(modules: $modules)';
+    return 'ProductState.fetched(products: $products)';
   }
 
   @override
@@ -293,12 +293,12 @@ class _$Fetched implements Fetched {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$Fetched &&
-            const DeepCollectionEquality().equals(other._modules, _modules));
+            const DeepCollectionEquality().equals(other._products, _products));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_modules));
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_products));
 
   @JsonKey(ignore: true)
   @override
@@ -311,32 +311,32 @@ class _$Fetched implements Fetched {
   TResult when<TResult extends Object?>({
     required TResult Function(String code, String message, String? statusCode)
         failure,
-    required TResult Function(List<ModuleModel> modules) fetched,
+    required TResult Function(List<ProductModel> products) fetched,
     required TResult Function() initial,
   }) {
-    return fetched(modules);
+    return fetched(products);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String code, String message, String? statusCode)? failure,
-    TResult? Function(List<ModuleModel> modules)? fetched,
+    TResult? Function(List<ProductModel> products)? fetched,
     TResult? Function()? initial,
   }) {
-    return fetched?.call(modules);
+    return fetched?.call(products);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String code, String message, String? statusCode)? failure,
-    TResult Function(List<ModuleModel> modules)? fetched,
+    TResult Function(List<ProductModel> products)? fetched,
     TResult Function()? initial,
     required TResult orElse(),
   }) {
     if (fetched != null) {
-      return fetched(modules);
+      return fetched(products);
     }
     return orElse();
   }
@@ -376,10 +376,11 @@ class _$Fetched implements Fetched {
   }
 }
 
-abstract class Fetched implements ModuleState {
-  const factory Fetched({required final List<ModuleModel> modules}) = _$Fetched;
+abstract class Fetched implements ProductState {
+  const factory Fetched({required final List<ProductModel> products}) =
+      _$Fetched;
 
-  List<ModuleModel> get modules;
+  List<ProductModel> get products;
   @JsonKey(ignore: true)
   _$$FetchedCopyWith<_$Fetched> get copyWith =>
       throw _privateConstructorUsedError;
@@ -393,7 +394,7 @@ abstract class _$$InitialCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialCopyWithImpl<$Res>
-    extends _$ModuleStateCopyWithImpl<$Res, _$Initial>
+    extends _$ProductStateCopyWithImpl<$Res, _$Initial>
     implements _$$InitialCopyWith<$Res> {
   __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
       : super(_value, _then);
@@ -406,7 +407,7 @@ class _$Initial implements Initial {
 
   @override
   String toString() {
-    return 'ModuleState.initial()';
+    return 'ProductState.initial()';
   }
 
   @override
@@ -423,7 +424,7 @@ class _$Initial implements Initial {
   TResult when<TResult extends Object?>({
     required TResult Function(String code, String message, String? statusCode)
         failure,
-    required TResult Function(List<ModuleModel> modules) fetched,
+    required TResult Function(List<ProductModel> products) fetched,
     required TResult Function() initial,
   }) {
     return initial();
@@ -433,7 +434,7 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String code, String message, String? statusCode)? failure,
-    TResult? Function(List<ModuleModel> modules)? fetched,
+    TResult? Function(List<ProductModel> products)? fetched,
     TResult? Function()? initial,
   }) {
     return initial?.call();
@@ -443,7 +444,7 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String code, String message, String? statusCode)? failure,
-    TResult Function(List<ModuleModel> modules)? fetched,
+    TResult Function(List<ProductModel> products)? fetched,
     TResult Function()? initial,
     required TResult orElse(),
   }) {
@@ -488,6 +489,6 @@ class _$Initial implements Initial {
   }
 }
 
-abstract class Initial implements ModuleState {
+abstract class Initial implements ProductState {
   const factory Initial() = _$Initial;
 }

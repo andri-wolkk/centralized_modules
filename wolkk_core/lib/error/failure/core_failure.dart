@@ -16,6 +16,6 @@ class CoreFailure with _$CoreFailure {
   const factory CoreFailure.serverFailure({
     required String code,
     required String message,
-    required String statusCode,
+    required int statusCode,
   }) = ServerFailure;
 }

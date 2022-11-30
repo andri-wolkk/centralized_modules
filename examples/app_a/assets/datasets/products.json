@@ -1,0 +1,4523 @@
+{
+    "currentPage": 1,
+    "links": {
+        "self": "/web/api/v3/accounts/58922ca4-bdb6-4a42-9fb3-e720f5c063c4/products?page=1"
+    },
+    "pagesTotal": 1,
+    "results": [
+        {
+            "active": true,
+            "id": "03861a27-b257-4245-a529-878cb861eaee",
+            "revision": 51,
+            "number": "1102",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "8ab63cb6-1025-43f9-856a-ca136a5af118",
+                "name": "Retail",
+                "number": "2"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "descriptions": [
+                {
+                    "type": "DESCRIPTION",
+                    "text": "Artikelbeschreibung............."
+                }
+            ],
+            "discountable": false,
+            "lastPurchasePrice": 1.9900,
+            "listed": true,
+            "listedSince": "2022-07-25T09:54:01+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Testartikel",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 7.99,
+                    "validFrom": "2022-07-25T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "recommendedRetailPrice": 9.99,
+            "relatedProducts": {
+                "id": "3da1eefe-2c34-4e0d-aaad-16db4b547404",
+                "name": "test",
+                "number": "test"
+            },
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "06af34bb-f770-4e2c-82f1-0f79e9fec9c6",
+                        "name": "Tommy`s Grünzeug",
+                        "number": "1"
+                    },
+                    "orderCode": "7894756",
+                    "value": 1.9900,
+                    "containerSize": 20.00,
+                    "description": "Testartikellieferant"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "3da1eefe-2c34-4e0d-aaad-16db4b547404",
+                    "name": "test",
+                    "number": "test"
+                }
+            ],
+            "trackInventory": false,
+            "specialPrices": [
+                {
+                    "value": 5.99,
+                    "quantityFrom": 5.000,
+                    "specialPriceConfiguration": {
+                        "id": "eea2830b-d0f4-4569-a625-226b8fbb08f9",
+                        "name": "Sonderpreis1",
+                        "number": "1"
+                    }
+                }
+            ],
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "04cc3e28-70a3-4046-964f-b5c624306af6",
+            "revision": 359,
+            "number": "9009333",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "4003b29e-6892-4c4c-95cb-96ee702986fd",
+                "name": "TabiloBurger",
+                "number": "25"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-11-21T15:57:06+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Cheeseburger",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 4.50,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 4.61,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 5.49,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "2be1b7af-6906-47f8-a552-680876763700",
+                    "name": "TabiloBurger",
+                    "number": "tabiloburger"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "06dcc90a-c186-43b6-a14a-58cde8faa282",
+            "revision": 362,
+            "number": "9009332",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "0ddb0065-59b1-45c7-bf79-bad06a3bc713"
+            },
+            "lastPurchasePrice": 0.9500,
+            "listed": true,
+            "listedSince": "2021-01-27T12:06:59+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Fanta 0,5l PET",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": true,
+            "prices": [
+                {
+                    "value": 2.52,
+                    "validFrom": "2021-01-27T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 3.00,
+                    "validFrom": "2021-01-27T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 2.00,
+                    "validFrom": "2021-01-27T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "94c3abf5-cb06-41d4-a8e2-a96fc97c93ef",
+                        "name": "Drink and More GmbH",
+                        "number": "6"
+                    },
+                    "orderCode": "100011",
+                    "value": 0.5000,
+                    "containerSize": 12.00,
+                    "description": "Fanta 0,5l PET"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "ef81f1bf-bfaf-4498-af5e-a4ffec4dfea4",
+                    "name": "Mittagstisch",
+                    "number": "mittagstisch"
+                },
+                {
+                    "id": "c8f48d1c-58cf-48b3-be54-be0382254e9a",
+                    "name": "TabiloGetränke",
+                    "number": "tabilogetränke"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "0b538163-a067-44af-b94f-60a28dcf20f2",
+            "revision": 60,
+            "number": "9009314",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "codes": [
+                {
+                    "productCode": "9009314",
+                    "containerSize": 1.00
+                }
+            ],
+            "commodityGroup": {
+                "id": "2df36a35-1860-4756-831b-f40b7c77672e",
+                "name": "Order",
+                "number": "17"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-09-22T15:07:09+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Order 9009314",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 1950.00,
+                    "validFrom": "2022-09-22T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "trackInventory": false,
+            "quantityDenomination": 1.00,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "0c16c639-a828-4ae5-9079-8206604429bf",
+            "revision": 364,
+            "number": "9009335",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "4003b29e-6892-4c4c-95cb-96ee702986fd",
+                "name": "TabiloBurger",
+                "number": "25"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-11-21T15:57:06+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Baconburger",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 4.50,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 5.03,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 5.99,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "2be1b7af-6906-47f8-a552-680876763700",
+                    "name": "TabiloBurger",
+                    "number": "tabiloburger"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "135bd83d-c4f3-44e4-a19b-c943410d26a8",
+            "revision": 241,
+            "number": "1003",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": true,
+            "discountable": true,
+            "image": {
+                "id": "a92a5191-0a63-4f0f-b6c7-9bc88c0656be"
+            },
+            "lastPurchasePrice": 0.6500,
+            "listed": true,
+            "listedSince": "2021-01-27T12:06:59+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Sprite 0,5l PET",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": true,
+            "prices": [
+                {
+                    "value": 3.95,
+                    "validFrom": "2021-01-27T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "94c3abf5-cb06-41d4-a8e2-a96fc97c93ef",
+                        "name": "Drink and More GmbH",
+                        "number": "6"
+                    },
+                    "orderCode": "100013",
+                    "value": 0.5000,
+                    "containerSize": 12.00,
+                    "description": "Sprite 0,5l PET"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "1e6926bb-a9ce-4361-957e-dca25ab41c65",
+            "revision": 211,
+            "number": "9009321",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "descriptions": [
+                {
+                    "type": "DESCRIPTION",
+                    "text": "Champagne Moet & Chandon Imperial\nBrut, Champagne AC\nWie man es vermag im Hause Moët & Chandon jedes Jahr die gleiche exzellente Signatur zu zeichnen - es bleibt ein Geheimnis."
+                }
+            ],
+            "discountable": true,
+            "image": {
+                "id": "cf0ea874-bca7-4b30-aff1-8607071c59a1"
+            },
+            "lastPurchasePrice": 26.4900,
+            "listed": true,
+            "listedSince": "2022-10-25T13:19:43+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Champagne Moet & Chandon Imperial 0,75L",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 33.53,
+                    "validFrom": "2022-10-25T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 39.90,
+                    "validFrom": "2022-10-25T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "a996c836-894c-4cc0-a5c2-a669b3b25e89",
+                        "name": "Drinks Shop 24",
+                        "number": "4"
+                    },
+                    "orderCode": "10005",
+                    "value": 26.4900,
+                    "containerSize": 6.00,
+                    "description": "Champagne Moet & Chandon Imperial 0,75L"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "1f962ff9-3076-41ea-aeab-60d130ab6c21",
+            "revision": 377,
+            "number": "9009343",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "597f6bd5-1da7-422c-b591-8bb39e9b7fcf",
+                "name": "V-Neck",
+                "number": "73"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-11-24T06:05:04+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "T-Shirt V-Neck White, S",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "726d5830-4034-46fb-ae1f-4a30cf3e8b73",
+                    "name": "Favorite",
+                    "number": "favorite"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "2a60bf00-e052-49bb-9657-cbd326221c0e",
+            "revision": 73,
+            "number": "123",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "2df36a35-1860-4756-831b-f40b7c77672e",
+                "name": "Order",
+                "number": "17"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "listed": true,
+            "listedSince": "2022-10-11T07:18:24+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "My Product",
+            "packagingQuantity": 1.0000,
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 3.00,
+                    "validFrom": "2022-10-10T18:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": false,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "trackInventory": false,
+            "specialPrices": [
+                {
+                    "value": 1.50,
+                    "quantityFrom": 1.000,
+                    "specialPriceConfiguration": {
+                        "id": "70bf9d00-6e70-485e-8fd8-85014fb02e9e",
+                        "name": "EmployeeDiscount",
+                        "number": "3"
+                    }
+                }
+            ],
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "2dbc9c0c-fbf7-449a-aa78-d22d88708d0e",
+            "revision": 58,
+            "number": "66540",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "codes": [
+                {
+                    "productCode": "001",
+                    "containerSize": 1.00
+                }
+            ],
+            "commodityGroup": {
+                "id": "2756bb7e-25f6-43d5-a157-995eeb3d3d36",
+                "name": "Badmöbel",
+                "number": "16"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "c3289941-8912-4917-ab0b-b2c2ab7aa291"
+            },
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-09-21T12:40:16+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Ablage für Aufsatzwaschbecken TOPSY TOP 90 cm, 10cm hoch aus Eichennaturholz mit Knorren",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 533.90,
+                    "validFrom": "2022-09-21T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "4504ba42-cd7e-457a-b627-4d0b047e6125",
+                    "name": "Badmöbel",
+                    "number": "badmöbel"
+                }
+            ],
+            "trackInventory": false,
+            "quantityDenomination": 1.00,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "368939b2-3192-4a40-8918-ad6c3b2909f2",
+            "revision": 199,
+            "number": "01005",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "683d653b-9e76-43ce-9246-70f043d6d551",
+                "name": "Gemüse",
+                "number": "20"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-10-20T14:35:21+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Tomate",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 0.29,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 0.27,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "84c0372f-ae40-4cfe-8700-4b0b9792c3dd",
+                "name": "Vermindert",
+                "number": "2"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "03416ba4-4ecf-444f-b032-c4b36e169832",
+                    "name": "Gemüse",
+                    "number": "gemüse"
+                },
+                {
+                    "id": "2f628597-72c5-4c77-9910-86f33dc8228d",
+                    "name": "Tomate",
+                    "number": "tomate"
+                },
+                {
+                    "id": "2b47f452-0312-48fa-9923-915f7fb8d986",
+                    "name": "Lunch",
+                    "number": "Lunch"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "412a3b54-16b6-4d17-91f4-c9c332e6d9ab",
+            "revision": 366,
+            "number": "9009331",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "d5efd202-db46-4ca2-989a-4901466dadee"
+            },
+            "lastPurchasePrice": 0.5900,
+            "listed": true,
+            "listedSince": "2021-01-27T12:06:59+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Mezzo Mix 0,5l PET",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": true,
+            "prices": [
+                {
+                    "value": 3.00,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 2.00,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 2.52,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "94c3abf5-cb06-41d4-a8e2-a96fc97c93ef",
+                        "name": "Drink and More GmbH",
+                        "number": "6"
+                    },
+                    "orderCode": "100010",
+                    "value": 0.5000,
+                    "containerSize": 12.00,
+                    "description": "Coca Cola 0,5l PET"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "ef81f1bf-bfaf-4498-af5e-a4ffec4dfea4",
+                    "name": "Mittagstisch",
+                    "number": "mittagstisch"
+                },
+                {
+                    "id": "c8f48d1c-58cf-48b3-be54-be0382254e9a",
+                    "name": "TabiloGetränke",
+                    "number": "tabilogetränke"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "42231805-3411-4f6f-ad2a-ebb09261c1bf",
+            "revision": 361,
+            "number": "9009340",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "0b545845-8e85-4046-9e12-430b1455ed44",
+                "name": "TabiloBrötchen",
+                "number": "28"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-11-21T15:57:06+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Käsebrötchen",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 1.00,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 2.09,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 2.49,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "bc09b6e3-2d97-4a55-b7b6-24fa8e943905",
+                    "name": "TabiloBrötchen",
+                    "number": "tabilobrötchen"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "42d21c41-5881-4c1f-88b1-618bca4e94b6",
+            "revision": 365,
+            "number": "9009327",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "a3cf126c-5d0a-4f1b-bfd3-898e56693ea8"
+            },
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-10-26T15:31:57+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Café",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 2.50,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 3.50,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 2.94,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "ef81f1bf-bfaf-4498-af5e-a4ffec4dfea4",
+                    "name": "Mittagstisch",
+                    "number": "mittagstisch"
+                },
+                {
+                    "id": "67991076-2b1a-4db4-a59b-287f7729e660",
+                    "name": "TabiloHeißgetränke",
+                    "number": "tabiloheißgetränke"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "48fd30af-77d5-4862-854e-38659bd1a7f3",
+            "revision": 5,
+            "number": "1101",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "8ab63cb6-1025-43f9-856a-ca136a5af118",
+                "name": "Retail",
+                "number": "2"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2021-01-27T12:06:59+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Shampoo",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": true,
+            "prices": [
+                {
+                    "value": 3.45,
+                    "validFrom": "2021-01-27T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "4c82c6f4-fac6-4612-b9bd-302a0aee5ad7",
+            "revision": 197,
+            "number": "01003",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "9408f8f9-ffb8-4553-ab1f-63dd9356697c",
+                "name": "Obst",
+                "number": "19"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "c05d3134-644a-4948-a4fe-d0d6df26378d"
+            },
+            "lastPurchasePrice": 0.2000,
+            "listed": true,
+            "listedSince": "2022-10-20T14:35:21+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Birne",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 1.79,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 1.67,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "84c0372f-ae40-4cfe-8700-4b0b9792c3dd",
+                "name": "Vermindert",
+                "number": "2"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "06af34bb-f770-4e2c-82f1-0f79e9fec9c6",
+                        "name": "Tommy`s Grünzeug",
+                        "number": "1"
+                    },
+                    "orderCode": "1234",
+                    "value": 0.2000,
+                    "containerSize": 10.00,
+                    "description": "Birne"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "234fa13f-4b3b-4385-b493-1c20be3ed1d3",
+                    "name": "Obst",
+                    "number": "Obst"
+                },
+                {
+                    "id": "105a67bc-e69b-406f-8cab-842f562b08d2",
+                    "name": "Birne",
+                    "number": "birne"
+                },
+                {
+                    "id": "2b47f452-0312-48fa-9923-915f7fb8d986",
+                    "name": "Lunch",
+                    "number": "Lunch"
+                }
+            ],
+            "trackInventory": true,
+            "quantityDenomination": 1.00,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "4df6107f-73dd-42d8-a04e-816b8db5e7a2",
+            "revision": 196,
+            "number": "01002",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "9408f8f9-ffb8-4553-ab1f-63dd9356697c",
+                "name": "Obst",
+                "number": "19"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "fc9a83b1-f94e-421b-801c-a2d01d792f95"
+            },
+            "lastPurchasePrice": 1.7900,
+            "listed": true,
+            "listedSince": "2022-10-20T14:35:21+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Banane",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 2.29,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 2.14,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "84c0372f-ae40-4cfe-8700-4b0b9792c3dd",
+                "name": "Vermindert",
+                "number": "2"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "06af34bb-f770-4e2c-82f1-0f79e9fec9c6",
+                        "name": "Tommy`s Grünzeug",
+                        "number": "1"
+                    },
+                    "orderCode": "1002",
+                    "value": 1.7900,
+                    "containerSize": 5.00,
+                    "description": "Banane"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "234fa13f-4b3b-4385-b493-1c20be3ed1d3",
+                    "name": "Obst",
+                    "number": "Obst"
+                },
+                {
+                    "id": "967cc5b4-cf6d-4073-adb2-0cb704eb54f9",
+                    "name": "Banane",
+                    "number": "banane"
+                },
+                {
+                    "id": "2b47f452-0312-48fa-9923-915f7fb8d986",
+                    "name": "Lunch",
+                    "number": "Lunch"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "52b9d06e-72d8-43ef-880e-63c8a36b184f",
+            "revision": 212,
+            "number": "9009320",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "codes": [
+                {
+                    "productCode": "1337",
+                    "containerSize": 1.00
+                }
+            ],
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "descriptions": [
+                {
+                    "type": "DESCRIPTION",
+                    "text": "Belvedere wird aus 100 % Roggen hergestellt und ist vierfach destilliert. Mehrfach gekürt zum besten Vodka der Welt\n40 % vol"
+                }
+            ],
+            "discountable": true,
+            "image": {
+                "id": "ab014856-900b-4380-b168-a0d94552d63d"
+            },
+            "lastPurchasePrice": 23.4900,
+            "listed": true,
+            "listedSince": "2022-10-25T13:15:41+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Belvedere Vodka Pure 0,7L",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 26.88,
+                    "validFrom": "2022-10-25T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 24.99,
+                    "validFrom": "2022-10-25T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 31.99,
+                    "validFrom": "2022-10-25T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "a996c836-894c-4cc0-a5c2-a669b3b25e89",
+                        "name": "Drinks Shop 24",
+                        "number": "4"
+                    },
+                    "orderCode": "10003",
+                    "value": 23.4900,
+                    "containerSize": 6.00,
+                    "description": "Belvedere Vodka Pure 0,7L"
+                }
+            ],
+            "trackInventory": true,
+            "verificationRequirements": [
+                {
+                    "id": "1ef9aecf-4e17-4741-a54c-9761fd6d334d",
+                    "name": "Kunde über 18j?",
+                    "number": "1"
+                }
+            ],
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "55a69efa-dd0b-4215-b341-c702f04d585a",
+            "revision": 363,
+            "number": "9009341",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "0b545845-8e85-4046-9e12-430b1455ed44",
+                "name": "TabiloBrötchen",
+                "number": "28"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-11-21T15:57:06+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Fleischsalatbrötchen",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 1.00,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 2.09,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 2.49,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "bc09b6e3-2d97-4a55-b7b6-24fa8e943905",
+                    "name": "TabiloBrötchen",
+                    "number": "tabilobrötchen"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "5d1c6ebd-1cc2-4ae7-a359-00fd6c18c993",
+            "revision": 61,
+            "number": "9009315",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "codes": [
+                {
+                    "productCode": "999",
+                    "containerSize": 1.00
+                }
+            ],
+            "commodityGroup": {
+                "id": "2756bb7e-25f6-43d5-a157-995eeb3d3d36",
+                "name": "Badmöbel",
+                "number": "16"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "9fea837a-bb4a-415a-9bab-eac7b6dea35a"
+            },
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-09-22T15:16:28+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Armatur für Waschbecken EPOQUE ohne Abfluss Einloch Bronze",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 212.90,
+                    "validFrom": "2022-09-22T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "trackInventory": false,
+            "quantityDenomination": 1.00,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "62bae1e5-1621-4cd3-bc13-56f5c20f3f3c",
+            "revision": 202,
+            "number": "01008",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45a1172e-c0e7-4e8f-959b-6f4278ffa57e",
+                "name": "Backwaren",
+                "number": "21"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.6000,
+            "listed": true,
+            "listedSince": "2022-10-20T14:35:21+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Croissant",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 0.79,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 0.74,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "84c0372f-ae40-4cfe-8700-4b0b9792c3dd",
+                "name": "Vermindert",
+                "number": "2"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "3f077239-7e4b-40b0-addc-63b7ff71865b",
+                        "name": "Bäckerei GmbH",
+                        "number": "5"
+                    },
+                    "orderCode": "2222",
+                    "value": 0.6000,
+                    "containerSize": 10.00,
+                    "description": "Croissant"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "7477939b-d3f9-47d3-b364-6cde22c04454",
+                    "name": "Backwaren",
+                    "number": "backwaren"
+                },
+                {
+                    "id": "f74f899a-6295-46b7-b7c0-4934acc3f0c9",
+                    "name": "Backware",
+                    "number": "backware"
+                },
+                {
+                    "id": "61337dbb-093c-41ab-8f4b-96149224a399",
+                    "name": "Croissant",
+                    "number": "croissant"
+                },
+                {
+                    "id": "2b47f452-0312-48fa-9923-915f7fb8d986",
+                    "name": "Lunch",
+                    "number": "Lunch"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "66bfc31e-edcb-4677-9a65-a1f77eed1ada",
+            "revision": 325,
+            "number": "518113",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "5bf0b9b8-94a5-4a0c-a6c6-a505fae104cf",
+                "name": "SANIFAIR Einlösung",
+                "number": "23"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-11-18T15:43:19+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "SANIFAIR 1 EUR",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": -1.00,
+                    "validFrom": "2022-11-18T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": -1.00,
+                    "validFrom": "2022-11-18T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": -1.00,
+                    "validFrom": "2022-11-18T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "2ff728f1-c959-4a69-9fd5-7c638124fd1b",
+                "name": "Steuerfrei",
+                "number": "3"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "67f7a8a6-ef80-4e1e-8e6b-f8651a2dec2d",
+            "revision": 198,
+            "number": "01004",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "683d653b-9e76-43ce-9246-70f043d6d551",
+                "name": "Gemüse",
+                "number": "20"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.5000,
+            "listed": true,
+            "listedSince": "2022-10-20T14:35:21+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Gurke",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 0.29,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 0.27,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "84c0372f-ae40-4cfe-8700-4b0b9792c3dd",
+                "name": "Vermindert",
+                "number": "2"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "06af34bb-f770-4e2c-82f1-0f79e9fec9c6",
+                        "name": "Tommy`s Grünzeug",
+                        "number": "1"
+                    },
+                    "orderCode": "1003",
+                    "value": 0.5000,
+                    "containerSize": 15.00,
+                    "description": "Gurke"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "03416ba4-4ecf-444f-b032-c4b36e169832",
+                    "name": "Gemüse",
+                    "number": "gemüse"
+                },
+                {
+                    "id": "aed2f18e-e733-4844-9022-f026040c9e1a",
+                    "name": "Gurke",
+                    "number": "gurke"
+                },
+                {
+                    "id": "2b47f452-0312-48fa-9923-915f7fb8d986",
+                    "name": "Lunch",
+                    "number": "Lunch"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "6e96f998-2e89-46d7-9542-53970164ef09",
+            "revision": 213,
+            "number": "9009318",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "descriptions": [
+                {
+                    "type": "DESCRIPTION",
+                    "text": "Jägermeister enthält 35% vol. Alkohol.\n\nJägermeister 0,7 ltr.\n\nHersteller:Mast-Jägermeister SE Jägermeisterstraße 7 - 15 38296 Wolfenbüttel Deutschland"
+                }
+            ],
+            "discountable": true,
+            "image": {
+                "id": "ae5083d3-008f-4563-8112-15b6483e3d4b"
+            },
+            "lastPurchasePrice": 9.5000,
+            "listed": true,
+            "listedSince": "2022-10-25T13:05:34+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Jägermeister 0,7L",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 8.99,
+                    "validFrom": "2022-10-25T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 13.99,
+                    "validFrom": "2022-10-25T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 11.76,
+                    "validFrom": "2022-10-25T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "a996c836-894c-4cc0-a5c2-a669b3b25e89",
+                        "name": "Drinks Shop 24",
+                        "number": "4"
+                    },
+                    "orderCode": "10001",
+                    "value": 9.5000,
+                    "containerSize": 6.00,
+                    "description": "Jägermeister 0,7L"
+                }
+            ],
+            "trackInventory": true,
+            "verificationRequirements": [
+                {
+                    "id": "1ef9aecf-4e17-4741-a54c-9761fd6d334d",
+                    "name": "Kunde über 18j?",
+                    "number": "1"
+                }
+            ],
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "73a8f326-88ae-4a8e-84c1-8bcfec3940d8",
+            "revision": 239,
+            "number": "1002",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": true,
+            "discountable": true,
+            "image": {
+                "id": "0ddb0065-59b1-45c7-bf79-bad06a3bc713"
+            },
+            "lastPurchasePrice": 0.9500,
+            "listed": true,
+            "listedSince": "2021-01-27T12:06:59+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Fanta 0,5l PET",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": true,
+            "prices": [
+                {
+                    "value": 2.95,
+                    "validFrom": "2021-01-27T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "94c3abf5-cb06-41d4-a8e2-a96fc97c93ef",
+                        "name": "Drink and More GmbH",
+                        "number": "6"
+                    },
+                    "orderCode": "100011",
+                    "value": 0.5000,
+                    "containerSize": 12.00,
+                    "description": "Fanta 0,5l PET"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "76629b59-c8d7-46ac-8958-977e9e3d9ba1",
+            "revision": 360,
+            "number": "9009330",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "a0b86b6e-ea28-496a-af73-60058f7c520b"
+            },
+            "lastPurchasePrice": 0.5900,
+            "listed": true,
+            "listedSince": "2021-01-27T12:06:59+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Coca Cola 0,5l PET",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": true,
+            "prices": [
+                {
+                    "value": 2.52,
+                    "validFrom": "2021-01-27T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 3.00,
+                    "validFrom": "2021-01-27T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 2.00,
+                    "validFrom": "2021-01-27T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "94c3abf5-cb06-41d4-a8e2-a96fc97c93ef",
+                        "name": "Drink and More GmbH",
+                        "number": "6"
+                    },
+                    "orderCode": "100010",
+                    "value": 0.5000,
+                    "containerSize": 12.00,
+                    "description": "Coca Cola 0,5l PET"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "ef81f1bf-bfaf-4498-af5e-a4ffec4dfea4",
+                    "name": "Mittagstisch",
+                    "number": "mittagstisch"
+                },
+                {
+                    "id": "c8f48d1c-58cf-48b3-be54-be0382254e9a",
+                    "name": "TabiloGetränke",
+                    "number": "tabilogetränke"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "7762fc99-dd29-4bae-8502-ed867f890d33",
+            "revision": 203,
+            "number": "01009",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45a1172e-c0e7-4e8f-959b-6f4278ffa57e",
+                "name": "Backwaren",
+                "number": "21"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 15.0000,
+            "listed": true,
+            "listedSince": "2022-10-20T14:35:21+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Brezel",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 0.99,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 0.93,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "84c0372f-ae40-4cfe-8700-4b0b9792c3dd",
+                "name": "Vermindert",
+                "number": "2"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "3f077239-7e4b-40b0-addc-63b7ff71865b",
+                        "name": "Bäckerei GmbH",
+                        "number": "5"
+                    },
+                    "orderCode": "3333",
+                    "value": 0.3000,
+                    "containerSize": 6.00,
+                    "description": "Brezel"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "7477939b-d3f9-47d3-b364-6cde22c04454",
+                    "name": "Backwaren",
+                    "number": "backwaren"
+                },
+                {
+                    "id": "f74f899a-6295-46b7-b7c0-4934acc3f0c9",
+                    "name": "Backware",
+                    "number": "backware"
+                },
+                {
+                    "id": "26e8b944-3701-4ba0-8f62-85c7fb908fe3",
+                    "name": "Brezel",
+                    "number": "brezel"
+                },
+                {
+                    "id": "2b47f452-0312-48fa-9923-915f7fb8d986",
+                    "name": "Lunch",
+                    "number": "Lunch"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "7b8a8198-2238-4c20-8902-59576f15a7ff",
+            "revision": 341,
+            "number": "9009325",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "c6b42ba3-adfd-410f-9946-83b4d9ecde55"
+            },
+            "listed": true,
+            "listedSince": "2022-10-26T15:23:51+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Coca Cola Zero 0,5l PET",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 2.00,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 3.00,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 2.52,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "ef81f1bf-bfaf-4498-af5e-a4ffec4dfea4",
+                    "name": "Mittagstisch",
+                    "number": "mittagstisch"
+                },
+                {
+                    "id": "c8f48d1c-58cf-48b3-be54-be0382254e9a",
+                    "name": "TabiloGetränke",
+                    "number": "tabilogetränke"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "7cff2564-bea5-4403-ad65-b34d52642640",
+            "revision": 373,
+            "number": "9009326",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "a92a5191-0a63-4f0f-b6c7-9bc88c0656be"
+            },
+            "lastPurchasePrice": 0.3000,
+            "listed": true,
+            "listedSince": "2022-10-26T15:25:50+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Sprite 0,5l PET",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 3.00,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 2.00,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 2.52,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "94c3abf5-cb06-41d4-a8e2-a96fc97c93ef",
+                        "name": "Drink and More GmbH",
+                        "number": "6"
+                    },
+                    "orderCode": "100014",
+                    "value": 0.3000,
+                    "containerSize": 12.00,
+                    "description": "Sprite 0,5l PET"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "ef81f1bf-bfaf-4498-af5e-a4ffec4dfea4",
+                    "name": "Mittagstisch",
+                    "number": "mittagstisch"
+                },
+                {
+                    "id": "c8f48d1c-58cf-48b3-be54-be0382254e9a",
+                    "name": "TabiloGetränke",
+                    "number": "tabilogetränke"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "7ead2580-d96e-4499-9c27-633327aa8b47",
+            "revision": 372,
+            "number": "9009336",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "4003b29e-6892-4c4c-95cb-96ee702986fd",
+                "name": "TabiloBurger",
+                "number": "25"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-11-21T15:57:06+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Bacon-Cheese-Burger",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 5.00,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 5.87,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 6.99,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "2be1b7af-6906-47f8-a552-680876763700",
+                    "name": "TabiloBurger",
+                    "number": "tabiloburger"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "8eb31bbe-96b0-46d9-ba38-ca63388f5a55",
+            "revision": 31,
+            "number": "1106",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "codes": [
+                {
+                    "productCode": "1234",
+                    "containerSize": 98765.00,
+                    "description": "Something"
+                }
+            ],
+            "commodityGroup": {
+                "id": "cd1b45f2-8987-4000-b319-b065d0989e68",
+                "name": "Royal Canin - Hunde",
+                "number": "7"
+            },
+            "conversion": false,
+            "costs": 1.3000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "image": {
+                "id": "52e96c93-f58c-4b55-82d5-611a7395715c"
+            },
+            "lastPurchasePrice": 14.1000,
+            "listed": true,
+            "listedSince": "2022-08-22T12:06:48+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Royal Canin Mini Adult 8+",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "printTicketsSeparately": true,
+            "recommendedRetailPrice": 14.10,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "2e089dd9-6ff6-4e84-9dc3-1fdae0abf2ee",
+                        "name": "Lieferant Tiernahrung",
+                        "number": "2"
+                    },
+                    "orderCode": "4923.16",
+                    "value": 5.5000,
+                    "containerSize": 2.00,
+                    "description": "Royal Canin Mini Adult 8+ 2KG"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "3da1eefe-2c34-4e0d-aaad-16db4b547404",
+                    "name": "test",
+                    "number": "test"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "98a8d547-a811-4e11-89ce-94ce3c34422a",
+            "revision": 371,
+            "number": "9009328",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "474fdb6e-a198-4cda-aa4a-e7b901117e06"
+            },
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-10-26T15:34:02+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Latte Macchiato",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 2.50,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 3.50,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 2.94,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "ef81f1bf-bfaf-4498-af5e-a4ffec4dfea4",
+                    "name": "Mittagstisch",
+                    "number": "mittagstisch"
+                },
+                {
+                    "id": "67991076-2b1a-4db4-a59b-287f7729e660",
+                    "name": "TabiloHeißgetränke",
+                    "number": "tabiloheißgetränke"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "99ecaeaf-56b3-46ab-9367-e2a3b91e8f03",
+            "revision": 358,
+            "number": "124",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "2df36a35-1860-4756-831b-f40b7c77672e",
+                "name": "Order",
+                "number": "17"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "listed": true,
+            "listedSince": "2022-11-22T10:02:18+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "My Product",
+            "packagingQuantity": 1.0000,
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 3.00,
+                    "validFrom": "2022-10-10T18:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": false,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "9c219d29-870b-4696-b210-16b3fe4d4f58",
+            "revision": 200,
+            "number": "01006",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "683d653b-9e76-43ce-9246-70f043d6d551",
+                "name": "Gemüse",
+                "number": "20"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.3900,
+            "listed": true,
+            "listedSince": "2022-10-20T14:35:21+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Paprika",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 0.29,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 0.27,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "84c0372f-ae40-4cfe-8700-4b0b9792c3dd",
+                "name": "Vermindert",
+                "number": "2"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "06af34bb-f770-4e2c-82f1-0f79e9fec9c6",
+                        "name": "Tommy`s Grünzeug",
+                        "number": "1"
+                    },
+                    "orderCode": "1004",
+                    "value": 0.3900,
+                    "containerSize": 10.00,
+                    "description": "Paprika"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "03416ba4-4ecf-444f-b032-c4b36e169832",
+                    "name": "Gemüse",
+                    "number": "gemüse"
+                },
+                {
+                    "id": "1004fa4c-65d1-43b4-a6e2-c90b89a8d1ba",
+                    "name": "Paprika",
+                    "number": "paprika"
+                },
+                {
+                    "id": "2b47f452-0312-48fa-9923-915f7fb8d986",
+                    "name": "Lunch",
+                    "number": "Lunch"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "9eec8e75-1e64-4482-9240-079feb206a86",
+            "revision": 114,
+            "number": "81",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-09-27T11:17:47+02:00",
+            "maxPrice": 999.99,
+            "minPrice": 999.99,
+            "name": "Halis",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 999.99,
+                    "validFrom": "2022-09-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "84c0372f-ae40-4cfe-8700-4b0b9792c3dd",
+                "name": "Vermindert",
+                "number": "2"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "212de1c6-dc66-4939-86ed-c8fad6ce11ed",
+                    "name": "Halis",
+                    "number": "halis"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "a4c83eef-6f0b-4415-84ce-c060ca50e46b",
+            "revision": 370,
+            "number": "9009334",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "4003b29e-6892-4c4c-95cb-96ee702986fd",
+                "name": "TabiloBurger",
+                "number": "25"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-11-21T15:57:06+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Hamburger",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 3.50,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 4.19,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 4.99,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "2be1b7af-6906-47f8-a552-680876763700",
+                    "name": "TabiloBurger",
+                    "number": "tabiloburger"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "a5e0003d-9c2e-4764-a743-39f95121b789",
+            "revision": 369,
+            "number": "9009337",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "98bb2404-7ce6-4e95-a56e-7c0af28a56b9",
+                "name": "TabiloPasta",
+                "number": "27"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-11-21T15:57:06+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Spaghetti Bolognese",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 4.00,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 5.03,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 5.99,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "7fc3c874-f9ec-4e1c-9552-784d981f76f8",
+                    "name": "TabiloPasta",
+                    "number": "tabilopasta"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "a6871e80-e586-4162-b833-652af88b8774",
+            "revision": 28,
+            "number": "1104",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "833d2f13-e4f3-4b16-b89a-b7b78351ff55",
+                "name": "Trockennahrung für Hunde",
+                "number": "4"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "descriptions": [
+                {
+                    "type": "MANUAL",
+                    "text": "Fütterungshinweise\nKontraindikationen: Nicht geeignet für trächtige und säugende Hündinnen, Welpen und wachsende Hunde, bei hepatischer Enzephalopathie, Lymphangiektasie, Pankreatitis, Hyperlipidämie, Erkrankungen, die eine starke Fettreduktion erforderlich machen.\nEmpfohlene Fütterungsdauer: Linderung akuter Resorptionsstörungen des Darms: Bis zu zwölf Wochen. Ausgleich bei unzureichender Verdauung: Zunächst bis zu zwölf Wochen, bei chronischer Insuffizienz der Bauchspeicheldrüse lebenslang.\nAlleinfutter: Dieses Diätfutter wird als Alleinfutter gegeben. Die Gabe von Snacks sollte nur nach Rücksprache mit dem Tierarzt erfolgen.\nWasser: Bitte immer ausreichend frisches Wasser zur freien Aufnahme anbieten, um einer Austrocknung durch den erhöhten Flüssigkeitsverlust vorzubeugen.\nAnzahl Mahlzeiten: Die tägliche Futtermenge sollte auf drei bis vier Portionen aufgeteilt werden, um die Verdauung nicht durch zu große Portionen zu überfordern."
+                },
+                {
+                    "type": "DESCRIPTION",
+                    "text": "Diät-Alleinfuttermittel für ausgewachsene Hunde\nZur Linderung akuter Resorptionsstörungen des Darms\nAls Ausgleich bei unzureichender Verdauung\n(Auch geeignet bei exokriner Pankreasinsuffizienz)\nZusammensetzung: Reis 54,4 %, Geflügelprotein (getrocknet) 22,5 %, Leinsamen 4,7 %, Reiskleie 4,6 %, Geflügelproteinhydrolysat 3 %, Geflügelfett 2,7 %, Rübentrockenschnitzel 1,6 %, Erbsen (getrocknet), Chicorée 0,7 % (getrocknet, als Quelle für 0,42 % Inulin), Mannan-Oligosaccharide 0,7 %, Flohsamen 0,35 %, Preiselbeeren (getrocknet), Äpfel (getrocknet), Natriumchlorid 0,35 %, Monocalciumphosphat 0,35 %, Kaliumchlorid 0,35 %, Yucca (getrocknet)\n\nAnalytische Bestandteile: Protein 24 %, Fettgehalt 10 %, Rohfaser 2 %, Rohasche 7,3 %, Feuchtigkeit 9 %, Natrium 0,3 %, Kalium 0,6 %\n\nZusatzstoffe: Ernährungsphysiologische Zusatzstoffe je kg: Vitamin A 15.000 IE, Vitamin D3 1.200 IE, Vitamin E 350 mg, Vitamin C 100 mg, Kupfer aus Kupfer(II)-sulfat, Pentahydrat 10 mg, Zink aus Zinkoxid 90 mg, Zink aus Aminosäure-Zinkchelat, Hydrat 65 mg, Jod aus Calciumjodat, wasserfrei 2 mg, Selen aus Natriumselenit 0,2 mg\n\nTechnologische Zusatzstoffe: Antioxidationsmittel\n\nLeicht verdauliche Ausgangsquellen: Reis, Geflügelprotein (getrocknet), Geflügel, Geflügelproteinhydrolysat, Geflügelfett\n\nProdukthinweis: Leicht verdauliche Ernährung mit erhöhtem Natrium- und Kaliumgehalt\n\nES WIRD EMPFOHLEN, VOR DER VERWENDUNG ODER VOR VERLÄNGERUNG DER FÜTTERUNGSDAUER DEN RAT EINES TIERARZTES EINZUHOLEN."
+                }
+            ],
+            "discountable": false,
+            "image": {
+                "id": "1b275bd6-1c7d-47f0-9cd1-fb7ef2ac42c4"
+            },
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-08-22T11:33:45+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "activa care GASTRO INTESTINAL",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 25.99,
+                    "validFrom": "2022-08-22T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "3da1eefe-2c34-4e0d-aaad-16db4b547404",
+                    "name": "test",
+                    "number": "test"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "ac73dd6d-3aad-4bf4-830d-58617fce999d",
+            "revision": 52,
+            "number": "1105",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "88fc2b12-a62d-42e8-847d-3e3bfcb0362a",
+                "name": "Nassnahrung für Katzen",
+                "number": "5"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "image": {
+                "id": "133069c6-088c-4066-80d3-26ca104e4080"
+            },
+            "lastPurchasePrice": 3.0000,
+            "listed": true,
+            "listedSince": "2022-08-22T12:02:58+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "activa GOLD Akzeptanz Huhn & Lachs Nassnahrung für Katzen",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "2e089dd9-6ff6-4e84-9dc3-1fdae0abf2ee",
+                        "name": "Lieferant Tiernahrung",
+                        "number": "2"
+                    },
+                    "orderCode": "ABC123",
+                    "value": 3.0000,
+                    "containerSize": 1.00
+                }
+            ],
+            "tags": [
+                {
+                    "id": "3da1eefe-2c34-4e0d-aaad-16db4b547404",
+                    "name": "test",
+                    "number": "test"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "b9094534-7c2c-4472-b0a4-0cd7311323cc",
+            "revision": 312,
+            "number": "9009322",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "22a6c764-c5f4-4b06-bd69-017396c81431"
+            },
+            "lastPurchasePrice": 0.3000,
+            "listed": true,
+            "listedSince": "2022-10-26T14:54:16+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Ayran 0,25l",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 2.50,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 1.50,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "a996c836-894c-4cc0-a5c2-a669b3b25e89",
+                        "name": "Drinks Shop 24",
+                        "number": "4"
+                    },
+                    "orderCode": "10011",
+                    "value": 0.3000,
+                    "containerSize": 15.00,
+                    "description": "Ayran 0,25l"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "ef81f1bf-bfaf-4498-af5e-a4ffec4dfea4",
+                    "name": "Mittagstisch",
+                    "number": "mittagstisch"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "bfbb3dd4-037f-4cd9-9b67-e3aa888a5cb9",
+            "revision": 352,
+            "number": "9009324",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "246932b7-5dd1-4ab7-abab-e781f20c3770"
+            },
+            "lastPurchasePrice": 5.0000,
+            "listed": true,
+            "listedSince": "2022-10-26T15:13:04+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Çay Tee",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 2.50,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 3.50,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 2.94,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "ef81f1bf-bfaf-4498-af5e-a4ffec4dfea4",
+                    "name": "Mittagstisch",
+                    "number": "mittagstisch"
+                },
+                {
+                    "id": "67991076-2b1a-4db4-a59b-287f7729e660",
+                    "name": "TabiloHeißgetränke",
+                    "number": "tabiloheißgetränke"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "c12fad62-d29f-47c2-9536-3d79f08781b1",
+            "revision": 34,
+            "number": "1107",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "012485ce-a5c7-4a8a-90b9-312e9dd66366",
+                "name": "Hunde Snacks",
+                "number": "9"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "51bfe1e3-09f0-429b-a33f-2edcc71209a5"
+            },
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-08-31T11:18:15+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Feine Filets | Ente in Maxi-Streifen | Snack für Hunde",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 5.99,
+                    "validFrom": "2022-08-31T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "3da1eefe-2c34-4e0d-aaad-16db4b547404",
+                    "name": "test",
+                    "number": "test"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "c855b8c2-e3ad-4fd4-9a61-0507e44ebe0c",
+            "revision": 394,
+            "number": "1234567891010001",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "codes": [
+                {
+                    "productCode": "080989999",
+                    "containerSize": 50.00
+                },
+                {
+                    "productCode": "090898888",
+                    "containerSize": 1.00
+                }
+            ],
+            "commodityGroup": {
+                "id": "81b3c1b5-5396-4362-857f-82b8f87b7c86",
+                "name": "Cargo",
+                "number": "9101"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "image": {
+                "id": "c9ecc863-54ee-4f57-b856-a40dba57a077"
+            },
+            "listed": true,
+            "listedSince": "2022-11-25T02:31:49+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Skinny Fit Cargo Joggers",
+            "packagingQuantity": 1.0000,
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "printTicketsSeparately": false,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "c876c6a1-1b1a-4cd9-8868-cd0c2da3b160",
+                    "name": "Green",
+                    "number": "Green"
+                },
+                {
+                    "id": "644382d5-0d60-460c-8be2-144be0e22869",
+                    "name": "Small",
+                    "number": "Small"
+                }
+            ],
+            "trackInventory": true,
+            "mediaUrls": [
+                {
+                    "url": "https://www.youtube.com/watch?v=GWlpSxB2Fdg"
+                }
+            ],
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "cd554d98-a9cb-41a3-a7bb-5983cfa4b7e0",
+            "revision": 59,
+            "number": "9009313",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "codes": [
+                {
+                    "productCode": "002",
+                    "containerSize": 1.00
+                }
+            ],
+            "commodityGroup": {
+                "id": "2756bb7e-25f6-43d5-a157-995eeb3d3d36",
+                "name": "Badmöbel",
+                "number": "16"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "11fee08d-3f71-4cc8-b641-b56fd5edeba2"
+            },
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-09-21T13:27:27+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Gewölbtes Badmöbel Modo 121 cm Eiche Tabak und Waschbecken Weiß Glänzend",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 1203.00,
+                    "validFrom": "2022-09-21T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "trackInventory": false,
+            "quantityDenomination": 1.00,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "cebdc1d0-b589-4132-89cc-98128eb519dd",
+            "revision": 322,
+            "number": "9009323",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "fb2715ea-aef2-4089-8710-274218ec2a10",
+                "name": "Lebensmittel",
+                "number": "18"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "ec817cf1-0875-4597-a734-848da84cb92d"
+            },
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-10-26T15:10:44+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Börek",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 4.00,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 5.00,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 4.19,
+                    "validFrom": "2022-10-27T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "subproducts": [
+                {
+                    "quantity": 0.000,
+                    "tag": {
+                        "id": "ef81f1bf-bfaf-4498-af5e-a4ffec4dfea4",
+                        "name": "Mittagstisch",
+                        "number": "mittagstisch"
+                    },
+                    "type": "TAG"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "d3e8ae24-5c20-4dc9-bcc7-73113efbcaab",
+            "revision": 4,
+            "number": "1004",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2021-01-27T12:06:59+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Evian",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": true,
+            "prices": [
+                {
+                    "value": 1.95,
+                    "validFrom": "2021-01-27T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "2ff728f1-c959-4a69-9fd5-7c638124fd1b",
+                "name": "Steuerfrei",
+                "number": "3"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "df93a15b-a002-4b8a-a643-da6e0328fd06",
+            "revision": 74,
+            "number": "009",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-10-13T14:23:15+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "TestProdukt 0%",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 9.99,
+                    "validFrom": "2022-10-13T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "2ff728f1-c959-4a69-9fd5-7c638124fd1b",
+                "name": "Steuerfrei",
+                "number": "3"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "e088cd0d-e8ef-404a-be91-16ebb906e948",
+            "revision": 78,
+            "number": "9009317",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "codes": [
+                {
+                    "productCode": "666",
+                    "containerSize": 1.00
+                }
+            ],
+            "commodityGroup": {
+                "id": "fb2715ea-aef2-4089-8710-274218ec2a10",
+                "name": "Lebensmittel",
+                "number": "18"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "fcce52ef-77ec-48ef-a499-25293176edcf"
+            },
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-10-21T15:04:20+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "ITEM",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 4.99,
+                    "validFrom": "2022-10-21T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "e0deb165-9d92-4e35-a9c0-41770c8093fe",
+            "revision": 54,
+            "number": "1103",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "1c565260-0b78-46b6-bfc2-3a2a41a376be",
+                "name": "Nassnahrung für Hunde",
+                "number": "3"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "image": {
+                "id": "e707f862-c653-4596-85e9-bd750015d514"
+            },
+            "lastPurchasePrice": 0.3333,
+            "listed": true,
+            "listedSince": "2022-08-22T11:26:41+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "activa care GASTRO INTESTINAL",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 21.99,
+                    "validFrom": "2022-08-22T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "2e089dd9-6ff6-4e84-9dc3-1fdae0abf2ee",
+                        "name": "Lieferant Tiernahrung",
+                        "number": "2"
+                    },
+                    "orderCode": "BCD321",
+                    "value": 0.3333,
+                    "containerSize": 3.00
+                }
+            ],
+            "tags": [
+                {
+                    "id": "3da1eefe-2c34-4e0d-aaad-16db4b547404",
+                    "name": "test",
+                    "number": "test"
+                }
+            ],
+            "trackInventory": false,
+            "specialPrices": [
+                {
+                    "value": 18.99,
+                    "quantityFrom": 12.000,
+                    "specialPriceConfiguration": {
+                        "id": "0007306d-a648-4ef0-9ace-5ed58a3bea45",
+                        "name": "Karton",
+                        "number": "2"
+                    }
+                }
+            ],
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "e2a9e9cb-b953-402e-a1a9-b84ccc214419",
+            "revision": 214,
+            "number": "9009319",
+            "alternativeSector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "8e38241a-9b16-434c-9e3f-2051bd6be48e"
+            },
+            "lastPurchasePrice": 8.9900,
+            "listed": true,
+            "listedSince": "2022-10-25T13:11:17+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "BACARDI CARTA BLANCA 0,7L",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 10.50,
+                    "validFrom": "2022-10-25T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 9.99,
+                    "validFrom": "2022-10-25T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 12.49,
+                    "validFrom": "2022-10-25T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "a996c836-894c-4cc0-a5c2-a669b3b25e89",
+                        "name": "Drinks Shop 24",
+                        "number": "4"
+                    },
+                    "orderCode": "10002",
+                    "value": 8.9900,
+                    "containerSize": 6.00,
+                    "description": "BACARDI CARTA BLANCA 0,7L"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "0ee4f43a-c3b3-4a2d-b19f-c40ec01bcd68",
+                    "name": "aktion",
+                    "number": "aktion"
+                }
+            ],
+            "trackInventory": true,
+            "verificationRequirements": [
+                {
+                    "id": "1ef9aecf-4e17-4741-a54c-9761fd6d334d",
+                    "name": "Kunde über 18j?",
+                    "number": "1"
+                }
+            ],
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "e4784b25-5ebb-4409-8340-ad8cebe59ce3",
+            "revision": 375,
+            "number": "9009342",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "87169b2f-1859-44bf-84a2-af9814dafa85",
+                "name": "Ultraboost Black",
+                "number": "71"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-11-24T06:02:24+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Ultraboost Black, 36",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "trackInventory": true,
+            "quantityDenomination": 1.00,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "e9b19fde-a02d-4086-a6e1-7f6ae82fcec8",
+            "revision": 237,
+            "number": "1001",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+                "name": "Getränke",
+                "number": "1"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": true,
+            "discountable": true,
+            "image": {
+                "id": "a0b86b6e-ea28-496a-af73-60058f7c520b"
+            },
+            "lastPurchasePrice": 0.5900,
+            "listed": true,
+            "listedSince": "2021-01-27T12:06:59+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Coca Cola 0,5l PET",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": true,
+            "prices": [
+                {
+                    "value": 2.52,
+                    "validFrom": "2021-01-27T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 3.00,
+                    "validFrom": "2021-01-27T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "relatedProducts": {
+                "id": "3da1eefe-2c34-4e0d-aaad-16db4b547404",
+                "name": "test",
+                "number": "test"
+            },
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "94c3abf5-cb06-41d4-a8e2-a96fc97c93ef",
+                        "name": "Drink and More GmbH",
+                        "number": "6"
+                    },
+                    "orderCode": "100010",
+                    "value": 0.5000,
+                    "containerSize": 12.00,
+                    "description": "Coca Cola 0,5l PET"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "e9b39b7e-ba10-4327-8b88-7b73bb21e3fd",
+            "revision": 208,
+            "number": "1111",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "4ee07362-e307-4059-931c-bf659ac96fb4",
+                "name": "Spirituosen",
+                "number": "22"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 6.9900,
+            "listed": true,
+            "listedSince": "2022-10-24T15:58:56+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Wodka Zubrovka Bison Grass 0,7l",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 8.99,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 12.99,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 10.92,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "a996c836-894c-4cc0-a5c2-a669b3b25e89",
+                        "name": "Drinks Shop 24",
+                        "number": "4"
+                    },
+                    "orderCode": "10005",
+                    "value": 6.9900,
+                    "containerSize": 6.00,
+                    "description": "Wodka Zubrovka Bison Grass 0,7l"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "efa19b81-ef34-442b-bda1-09cdce4cc5c5",
+                    "name": "New",
+                    "number": "new"
+                }
+            ],
+            "trackInventory": true,
+            "quantityDenomination": 1.00,
+            "verificationRequirements": [
+                {
+                    "id": "1ef9aecf-4e17-4741-a54c-9761fd6d334d",
+                    "name": "Kunde über 18j?",
+                    "number": "1"
+                }
+            ],
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "eb2d5a8a-9963-4adc-83c9-222cba75a6a9",
+            "revision": 201,
+            "number": "01007",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "45a1172e-c0e7-4e8f-959b-6f4278ffa57e",
+                "name": "Backwaren",
+                "number": "21"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.5000,
+            "listed": true,
+            "listedSince": "2022-10-20T14:35:21+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Baguette",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 0.69,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 0.64,
+                    "validFrom": "2022-10-24T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "84c0372f-ae40-4cfe-8700-4b0b9792c3dd",
+                "name": "Vermindert",
+                "number": "2"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "3f077239-7e4b-40b0-addc-63b7ff71865b",
+                        "name": "Bäckerei GmbH",
+                        "number": "5"
+                    },
+                    "orderCode": "1111",
+                    "value": 0.5000,
+                    "containerSize": 5.00,
+                    "description": "Baguette"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "7477939b-d3f9-47d3-b364-6cde22c04454",
+                    "name": "Backwaren",
+                    "number": "backwaren"
+                },
+                {
+                    "id": "40d2403b-6aea-4c9c-975a-8660daae9062",
+                    "name": "Baguette",
+                    "number": "baguette"
+                },
+                {
+                    "id": "f74f899a-6295-46b7-b7c0-4934acc3f0c9",
+                    "name": "Backware",
+                    "number": "backware"
+                },
+                {
+                    "id": "2b47f452-0312-48fa-9923-915f7fb8d986",
+                    "name": "Lunch",
+                    "number": "Lunch"
+                }
+            ],
+            "trackInventory": true,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "ebb8416c-60e8-47db-ad0a-e91ce5f4cfaf",
+            "revision": 195,
+            "number": "01001",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "9408f8f9-ffb8-4553-ab1f-63dd9356697c",
+                "name": "Obst",
+                "number": "19"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "image": {
+                "id": "4ffac9b6-5263-4443-8f83-63dc223e1686"
+            },
+            "lastPurchasePrice": 0.3500,
+            "listed": true,
+            "listedSince": "2022-10-20T14:35:21+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Apfel",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 1.99,
+                    "validFrom": "2022-10-20T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                },
+                {
+                    "value": 1.86,
+                    "validFrom": "2022-10-20T00:00:00+02:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "84c0372f-ae40-4cfe-8700-4b0b9792c3dd",
+                "name": "Vermindert",
+                "number": "2"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "supplierPrices": [
+                {
+                    "supplier": {
+                        "id": "06af34bb-f770-4e2c-82f1-0f79e9fec9c6",
+                        "name": "Tommy`s Grünzeug",
+                        "number": "1"
+                    },
+                    "orderCode": "1001",
+                    "value": 0.3500,
+                    "containerSize": 10.00,
+                    "description": "Apfel Normal"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "234fa13f-4b3b-4385-b493-1c20be3ed1d3",
+                    "name": "Obst",
+                    "number": "Obst"
+                },
+                {
+                    "id": "acf60042-eed0-4d54-a820-48d66f3b9b80",
+                    "name": "Apfel",
+                    "number": "apfel"
+                },
+                {
+                    "id": "2b47f452-0312-48fa-9923-915f7fb8d986",
+                    "name": "Lunch",
+                    "number": "Lunch"
+                }
+            ],
+            "trackInventory": true,
+            "mediaUrls": [
+                {
+                    "url": "https://media.istockphoto.com/photos/red-apple-picture-id184276818?k=20&m=184276818&s=612x612&w=0&h=QxOcueqAUVTdiJ7DVoCu-BkNCIuwliPEgtAQhgvBA_g="
+                }
+            ],
+            "salesLock": false,
+            "stockReturnUnsellable": true
+        },
+        {
+            "active": true,
+            "id": "ef7de61c-cae2-472e-9e9d-a5b1c30020fb",
+            "revision": 368,
+            "number": "9009339",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "0b545845-8e85-4046-9e12-430b1455ed44",
+                "name": "TabiloBrötchen",
+                "number": "28"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-11-21T15:57:06+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Salamibrötchen",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 2.09,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 1.00,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 2.49,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "bc09b6e3-2d97-4a55-b7b6-24fa8e943905",
+                    "name": "TabiloBrötchen",
+                    "number": "tabilobrötchen"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "f3c2b2aa-a56b-48b6-afcd-b0c6e448029b",
+            "revision": 70,
+            "number": "9009316",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "2df36a35-1860-4756-831b-f40b7c77672e",
+                "name": "Order",
+                "number": "17"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": false,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-10-11T05:44:23+02:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Test Product",
+            "packagingQuantity": 1.0000,
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 2.00,
+                    "validFrom": "2022-10-10T18:00:00+02:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        },
+        {
+            "active": true,
+            "id": "fa33703e-5a54-4b85-96b9-d0c5326c4de3",
+            "revision": 367,
+            "number": "9009338",
+            "assortment": {
+                "id": "0aca29b2-90cb-4cf5-ac81-86061af87f60",
+                "name": "Standard",
+                "number": "1"
+            },
+            "commodityGroup": {
+                "id": "98bb2404-7ce6-4e95-a56e-7c0af28a56b9",
+                "name": "TabiloPasta",
+                "number": "27"
+            },
+            "conversion": false,
+            "costs": 0.0000,
+            "deactivated": false,
+            "deposit": false,
+            "discountable": true,
+            "lastPurchasePrice": 0.0000,
+            "listed": true,
+            "listedSince": "2022-11-21T15:57:06+01:00",
+            "maxPrice": 9999.99,
+            "minPrice": -9999.99,
+            "name": "Spaghetti Carbonara",
+            "packagingRequired": false,
+            "personalizationRequired": false,
+            "priceChangable": false,
+            "prices": [
+                {
+                    "value": 4.00,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "2f682c49-9291-4975-9b54-2ed6fbcbe3d6",
+                        "name": "Mitarbeiter Preise",
+                        "number": "3"
+                    }
+                },
+                {
+                    "value": 5.03,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "6fe0e59f-4605-499b-a8c8-d7515b5166dc",
+                        "name": "Steuerfrei",
+                        "number": "2"
+                    }
+                },
+                {
+                    "value": 5.99,
+                    "validFrom": "2022-11-21T00:00:00+01:00",
+                    "priceGroup": {
+                        "id": "f4805b47-f465-4b09-8a5e-6863f53d1ec1",
+                        "name": "Standard",
+                        "number": "1"
+                    }
+                }
+            ],
+            "printTicketsSeparately": true,
+            "sector": {
+                "id": "e30b39b0-d7bc-4605-ae39-86a182152a08",
+                "name": "Standard",
+                "number": "1"
+            },
+            "serialNumberRequired": false,
+            "subproductPresentation": "DEFAULT",
+            "tags": [
+                {
+                    "id": "7fc3c874-f9ec-4e1c-9552-784d981f76f8",
+                    "name": "TabiloPasta",
+                    "number": "tabilopasta"
+                }
+            ],
+            "trackInventory": false,
+            "salesLock": false,
+            "stockReturnUnsellable": false
+        }
+    ],
+    "resultsOfPage": 58,
+    "resultsTotal": 58
+}

@@ -34,21 +34,21 @@ mixin _$CoreFailure {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String code, String message) localFailure,
-    required TResult Function(String code, String message, String statusCode)
+    required TResult Function(String code, String message, int statusCode)
         serverFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String code, String message)? localFailure,
-    TResult? Function(String code, String message, String statusCode)?
+    TResult? Function(String code, String message, int statusCode)?
         serverFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String code, String message)? localFailure,
-    TResult Function(String code, String message, String statusCode)?
+    TResult Function(String code, String message, int statusCode)?
         serverFailure,
     required TResult orElse(),
   }) =>
@@ -200,7 +200,7 @@ class _$LocalFailure implements LocalFailure {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String code, String message) localFailure,
-    required TResult Function(String code, String message, String statusCode)
+    required TResult Function(String code, String message, int statusCode)
         serverFailure,
   }) {
     return localFailure(code, message);
@@ -210,7 +210,7 @@ class _$LocalFailure implements LocalFailure {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String code, String message)? localFailure,
-    TResult? Function(String code, String message, String statusCode)?
+    TResult? Function(String code, String message, int statusCode)?
         serverFailure,
   }) {
     return localFailure?.call(code, message);
@@ -220,7 +220,7 @@ class _$LocalFailure implements LocalFailure {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String code, String message)? localFailure,
-    TResult Function(String code, String message, String statusCode)?
+    TResult Function(String code, String message, int statusCode)?
         serverFailure,
     required TResult orElse(),
   }) {
@@ -295,7 +295,7 @@ abstract class _$$ServerFailureCopyWith<$Res>
       __$$ServerFailureCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String code, String message, String statusCode});
+  $Res call({String code, String message, int statusCode});
 }
 
 /// @nodoc
@@ -325,7 +325,7 @@ class __$$ServerFailureCopyWithImpl<$Res>
       statusCode: null == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
     ));
   }
 }
@@ -348,7 +348,7 @@ class _$ServerFailure implements ServerFailure {
   @override
   final String message;
   @override
-  final String statusCode;
+  final int statusCode;
 
   @JsonKey(name: 'runtimeType')
   final String $type;
@@ -383,7 +383,7 @@ class _$ServerFailure implements ServerFailure {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String code, String message) localFailure,
-    required TResult Function(String code, String message, String statusCode)
+    required TResult Function(String code, String message, int statusCode)
         serverFailure,
   }) {
     return serverFailure(code, message, statusCode);
@@ -393,7 +393,7 @@ class _$ServerFailure implements ServerFailure {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String code, String message)? localFailure,
-    TResult? Function(String code, String message, String statusCode)?
+    TResult? Function(String code, String message, int statusCode)?
         serverFailure,
   }) {
     return serverFailure?.call(code, message, statusCode);
@@ -403,7 +403,7 @@ class _$ServerFailure implements ServerFailure {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String code, String message)? localFailure,
-    TResult Function(String code, String message, String statusCode)?
+    TResult Function(String code, String message, int statusCode)?
         serverFailure,
     required TResult orElse(),
   }) {
@@ -456,7 +456,7 @@ abstract class ServerFailure implements CoreFailure {
   const factory ServerFailure(
       {required final String code,
       required final String message,
-      required final String statusCode}) = _$ServerFailure;
+      required final int statusCode}) = _$ServerFailure;
 
   factory ServerFailure.fromJson(Map<String, dynamic> json) =
       _$ServerFailure.fromJson;
@@ -465,7 +465,7 @@ abstract class ServerFailure implements CoreFailure {
   String get code;
   @override
   String get message;
-  String get statusCode;
+  int get statusCode;
   @override
   @JsonKey(ignore: true)
   _$$ServerFailureCopyWith<_$ServerFailure> get copyWith =>

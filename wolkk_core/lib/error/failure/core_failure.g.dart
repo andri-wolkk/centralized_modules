@@ -24,7 +24,7 @@ _$ServerFailure _$$ServerFailureFromJson(Map<String, dynamic> json) =>
     _$ServerFailure(
       code: json['code'] as String,
       message: json['message'] as String,
-      statusCode: json['statusCode'] as String,
+      statusCode: json['statusCode'] as int,
       $type: json['runtimeType'] as String?,
     );
 

@@ -5,6 +5,7 @@ class ModuleState with _$ModuleState {
   const factory ModuleState.failure({
     required String code,
     required String message,
+    String? statusCode,
   }) = Failure;
 
   const factory ModuleState.fetched({
