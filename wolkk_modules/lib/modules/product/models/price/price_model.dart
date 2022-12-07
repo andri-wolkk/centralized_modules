@@ -1,6 +1,6 @@
 import 'package:wolkk_core/wolkk_core.dart';
 
-import '../store/store_model.dart';
+import '../price_group/price_group_model.dart';
 
 part 'price_model.freezed.dart';
 part 'price_model.g.dart';
@@ -8,8 +8,7 @@ part 'price_model.g.dart';
 @freezed
 class PriceModel with _$PriceModel {
   const factory PriceModel({
-    required String id,
-    required StoreModel store,
+    required PriceGroupModel priceGroup,
     required double value,
   }) = _PriceModel;
 

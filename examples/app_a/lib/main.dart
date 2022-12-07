@@ -4,6 +4,7 @@ import 'pages/main_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // const ApiModel(source: Source.korona);
   await configureDependencies('environment');
   runApp(const App());
 }
@@ -20,8 +21,7 @@ class App extends StatelessWidget {
       builder: (context, state) {
         return MultiBlocProvider(
           providers: [
-            BlocProvider.value(value: GetIt.I<ModuleCubit>()),
-            BlocProvider.value(value: GetIt.I<ProductCubit>()),
+            BlocProvider.value(value: GetIt.I<ProductBloc>()),
           ],
           child: const MaterialApp(
             home: MainPage(),

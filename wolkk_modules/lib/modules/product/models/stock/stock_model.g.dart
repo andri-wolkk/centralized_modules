@@ -8,14 +8,15 @@ part of 'stock_model.dart';
 
 _$_StockModel _$$_StockModelFromJson(Map<String, dynamic> json) =>
     _$_StockModel(
-      id: json['id'] as String,
-      stock: (json['stock'] as num).toDouble(),
-      store: StoreModel.fromJson(json['store'] as Map<String, dynamic>),
+      amount: json['amount'] == null
+          ? null
+          : AmountModel.fromJson(json['amount'] as Map<String, dynamic>),
+      warehouse:
+          WarehouseModel.fromJson(json['warehouse'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_StockModelToJson(_$_StockModel instance) =>
     <String, dynamic>{
-      'id': instance.id,
-      'stock': instance.stock,
-      'store': instance.store,
+      'amount': instance.amount,
+      'warehouse': instance.warehouse,
     };

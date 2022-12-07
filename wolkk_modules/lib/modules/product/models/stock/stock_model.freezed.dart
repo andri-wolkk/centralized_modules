@@ -20,9 +20,8 @@ StockModel _$StockModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$StockModel {
-  String get id => throw _privateConstructorUsedError;
-  double get stock => throw _privateConstructorUsedError;
-  StoreModel get store => throw _privateConstructorUsedError;
+  AmountModel? get amount => throw _privateConstructorUsedError;
+  WarehouseModel get warehouse => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -36,9 +35,10 @@ abstract class $StockModelCopyWith<$Res> {
           StockModel value, $Res Function(StockModel) then) =
       _$StockModelCopyWithImpl<$Res, StockModel>;
   @useResult
-  $Res call({String id, double stock, StoreModel store});
+  $Res call({AmountModel? amount, WarehouseModel warehouse});
 
-  $StoreModelCopyWith<$Res> get store;
+  $AmountModelCopyWith<$Res>? get amount;
+  $WarehouseModelCopyWith<$Res> get warehouse;
 }
 
 /// @nodoc
@@ -54,31 +54,38 @@ class _$StockModelCopyWithImpl<$Res, $Val extends StockModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
-    Object? stock = null,
-    Object? store = null,
+    Object? amount = freezed,
+    Object? warehouse = null,
   }) {
     return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      stock: null == stock
-          ? _value.stock
-          : stock // ignore: cast_nullable_to_non_nullable
-              as double,
-      store: null == store
-          ? _value.store
-          : store // ignore: cast_nullable_to_non_nullable
-              as StoreModel,
+      amount: freezed == amount
+          ? _value.amount
+          : amount // ignore: cast_nullable_to_non_nullable
+              as AmountModel?,
+      warehouse: null == warehouse
+          ? _value.warehouse
+          : warehouse // ignore: cast_nullable_to_non_nullable
+              as WarehouseModel,
     ) as $Val);
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $StoreModelCopyWith<$Res> get store {
-    return $StoreModelCopyWith<$Res>(_value.store, (value) {
-      return _then(_value.copyWith(store: value) as $Val);
+  $AmountModelCopyWith<$Res>? get amount {
+    if (_value.amount == null) {
+      return null;
+    }
+
+    return $AmountModelCopyWith<$Res>(_value.amount!, (value) {
+      return _then(_value.copyWith(amount: value) as $Val);
+    });
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $WarehouseModelCopyWith<$Res> get warehouse {
+    return $WarehouseModelCopyWith<$Res>(_value.warehouse, (value) {
+      return _then(_value.copyWith(warehouse: value) as $Val);
     });
   }
 }
@@ -91,10 +98,12 @@ abstract class _$$_StockModelCopyWith<$Res>
       __$$_StockModelCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String id, double stock, StoreModel store});
+  $Res call({AmountModel? amount, WarehouseModel warehouse});
 
   @override
-  $StoreModelCopyWith<$Res> get store;
+  $AmountModelCopyWith<$Res>? get amount;
+  @override
+  $WarehouseModelCopyWith<$Res> get warehouse;
 }
 
 /// @nodoc
@@ -108,23 +117,18 @@ class __$$_StockModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
-    Object? stock = null,
-    Object? store = null,
+    Object? amount = freezed,
+    Object? warehouse = null,
   }) {
     return _then(_$_StockModel(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      stock: null == stock
-          ? _value.stock
-          : stock // ignore: cast_nullable_to_non_nullable
-              as double,
-      store: null == store
-          ? _value.store
-          : store // ignore: cast_nullable_to_non_nullable
-              as StoreModel,
+      amount: freezed == amount
+          ? _value.amount
+          : amount // ignore: cast_nullable_to_non_nullable
+              as AmountModel?,
+      warehouse: null == warehouse
+          ? _value.warehouse
+          : warehouse // ignore: cast_nullable_to_non_nullable
+              as WarehouseModel,
     ));
   }
 }
@@ -132,22 +136,19 @@ class __$$_StockModelCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_StockModel implements _StockModel {
-  const _$_StockModel(
-      {required this.id, required this.stock, required this.store});
+  const _$_StockModel({this.amount, required this.warehouse});
 
   factory _$_StockModel.fromJson(Map<String, dynamic> json) =>
       _$$_StockModelFromJson(json);
 
   @override
-  final String id;
+  final AmountModel? amount;
   @override
-  final double stock;
-  @override
-  final StoreModel store;
+  final WarehouseModel warehouse;
 
   @override
   String toString() {
-    return 'StockModel(id: $id, stock: $stock, store: $store)';
+    return 'StockModel(amount: $amount, warehouse: $warehouse)';
   }
 
   @override
@@ -155,14 +156,14 @@ class _$_StockModel implements _StockModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_StockModel &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.stock, stock) || other.stock == stock) &&
-            (identical(other.store, store) || other.store == store));
+            (identical(other.amount, amount) || other.amount == amount) &&
+            (identical(other.warehouse, warehouse) ||
+                other.warehouse == warehouse));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, stock, store);
+  int get hashCode => Object.hash(runtimeType, amount, warehouse);
 
   @JsonKey(ignore: true)
   @override
@@ -180,19 +181,16 @@ class _$_StockModel implements _StockModel {
 
 abstract class _StockModel implements StockModel {
   const factory _StockModel(
-      {required final String id,
-      required final double stock,
-      required final StoreModel store}) = _$_StockModel;
+      {final AmountModel? amount,
+      required final WarehouseModel warehouse}) = _$_StockModel;
 
   factory _StockModel.fromJson(Map<String, dynamic> json) =
       _$_StockModel.fromJson;
 
   @override
-  String get id;
+  AmountModel? get amount;
   @override
-  double get stock;
-  @override
-  StoreModel get store;
+  WarehouseModel get warehouse;
   @override
   @JsonKey(ignore: true)
   _$$_StockModelCopyWith<_$_StockModel> get copyWith =>

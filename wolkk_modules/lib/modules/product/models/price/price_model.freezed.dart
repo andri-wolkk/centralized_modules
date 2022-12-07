@@ -20,8 +20,7 @@ PriceModel _$PriceModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$PriceModel {
-  String get id => throw _privateConstructorUsedError;
-  StoreModel get store => throw _privateConstructorUsedError;
+  PriceGroupModel get priceGroup => throw _privateConstructorUsedError;
   double get value => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -36,9 +35,9 @@ abstract class $PriceModelCopyWith<$Res> {
           PriceModel value, $Res Function(PriceModel) then) =
       _$PriceModelCopyWithImpl<$Res, PriceModel>;
   @useResult
-  $Res call({String id, StoreModel store, double value});
+  $Res call({PriceGroupModel priceGroup, double value});
 
-  $StoreModelCopyWith<$Res> get store;
+  $PriceGroupModelCopyWith<$Res> get priceGroup;
 }
 
 /// @nodoc
@@ -54,19 +53,14 @@ class _$PriceModelCopyWithImpl<$Res, $Val extends PriceModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
-    Object? store = null,
+    Object? priceGroup = null,
     Object? value = null,
   }) {
     return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      store: null == store
-          ? _value.store
-          : store // ignore: cast_nullable_to_non_nullable
-              as StoreModel,
+      priceGroup: null == priceGroup
+          ? _value.priceGroup
+          : priceGroup // ignore: cast_nullable_to_non_nullable
+              as PriceGroupModel,
       value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -76,9 +70,9 @@ class _$PriceModelCopyWithImpl<$Res, $Val extends PriceModel>
 
   @override
   @pragma('vm:prefer-inline')
-  $StoreModelCopyWith<$Res> get store {
-    return $StoreModelCopyWith<$Res>(_value.store, (value) {
-      return _then(_value.copyWith(store: value) as $Val);
+  $PriceGroupModelCopyWith<$Res> get priceGroup {
+    return $PriceGroupModelCopyWith<$Res>(_value.priceGroup, (value) {
+      return _then(_value.copyWith(priceGroup: value) as $Val);
     });
   }
 }
@@ -91,10 +85,10 @@ abstract class _$$_PriceModelCopyWith<$Res>
       __$$_PriceModelCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String id, StoreModel store, double value});
+  $Res call({PriceGroupModel priceGroup, double value});
 
   @override
-  $StoreModelCopyWith<$Res> get store;
+  $PriceGroupModelCopyWith<$Res> get priceGroup;
 }
 
 /// @nodoc
@@ -108,19 +102,14 @@ class __$$_PriceModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
-    Object? store = null,
+    Object? priceGroup = null,
     Object? value = null,
   }) {
     return _then(_$_PriceModel(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      store: null == store
-          ? _value.store
-          : store // ignore: cast_nullable_to_non_nullable
-              as StoreModel,
+      priceGroup: null == priceGroup
+          ? _value.priceGroup
+          : priceGroup // ignore: cast_nullable_to_non_nullable
+              as PriceGroupModel,
       value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -132,22 +121,19 @@ class __$$_PriceModelCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_PriceModel implements _PriceModel {
-  const _$_PriceModel(
-      {required this.id, required this.store, required this.value});
+  const _$_PriceModel({required this.priceGroup, required this.value});
 
   factory _$_PriceModel.fromJson(Map<String, dynamic> json) =>
       _$$_PriceModelFromJson(json);
 
   @override
-  final String id;
-  @override
-  final StoreModel store;
+  final PriceGroupModel priceGroup;
   @override
   final double value;
 
   @override
   String toString() {
-    return 'PriceModel(id: $id, store: $store, value: $value)';
+    return 'PriceModel(priceGroup: $priceGroup, value: $value)';
   }
 
   @override
@@ -155,14 +141,14 @@ class _$_PriceModel implements _PriceModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PriceModel &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.store, store) || other.store == store) &&
+            (identical(other.priceGroup, priceGroup) ||
+                other.priceGroup == priceGroup) &&
             (identical(other.value, value) || other.value == value));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, store, value);
+  int get hashCode => Object.hash(runtimeType, priceGroup, value);
 
   @JsonKey(ignore: true)
   @override
@@ -180,17 +166,14 @@ class _$_PriceModel implements _PriceModel {
 
 abstract class _PriceModel implements PriceModel {
   const factory _PriceModel(
-      {required final String id,
-      required final StoreModel store,
+      {required final PriceGroupModel priceGroup,
       required final double value}) = _$_PriceModel;
 
   factory _PriceModel.fromJson(Map<String, dynamic> json) =
       _$_PriceModel.fromJson;
 
   @override
-  String get id;
-  @override
-  StoreModel get store;
+  PriceGroupModel get priceGroup;
   @override
   double get value;
   @override
