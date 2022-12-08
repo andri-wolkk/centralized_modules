@@ -1,4 +1,5 @@
 import 'package:wolkk_core/wolkk_core.dart';
+import 'package:wolkk_modules/modules/product/models/code/code_model.dart';
 
 import '../description/description_model.dart';
 import '../image/image_model.dart';
@@ -12,16 +13,17 @@ part 'product_model.g.dart';
 @freezed
 class ProductModel with _$ProductModel {
   const factory ProductModel({
-    @Default([]) List<DescriptionModel>? description,
+    @Default([]) List<CodeModel> codes,
+    @Default([]) List<DescriptionModel> description,
     required String id,
     ImageModel? image,
-    @Default(0) double? maxPrice,
-    @Default(0) double? minPrice,
+    @Default(0) double maxPrice,
+    @Default(0) double minPrice,
     required String name,
-    @Default([]) List<PriceModel>? prices,
-    @Default([]) List<StockModel>? stocks,
-    @Default([]) List<TagModel>? tags,
-    @Default(true) bool? trackInventory,
+    @Default([]) List<PriceModel> prices,
+    @Default([]) List<StockModel> stocks,
+    @Default([]) List<TagModel> tags,
+    @Default(true) bool trackInventory,
   }) = _ProductModel;
 
   factory ProductModel.fromJson(Map<String, dynamic> json) =>

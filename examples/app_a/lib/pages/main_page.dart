@@ -44,8 +44,6 @@ class _MainPageState extends State<MainPage> {
     // );
   }
 
-  
-
   @override
   Widget build(BuildContext context) {
     return CorePage(
@@ -97,16 +95,16 @@ class _MainPageState extends State<MainPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
-                            Text('Name : ${products[index].name}'),
-                            if (products[index].tags != null)
-                              Row(
-                                children: [
-                                  for (var tag in products[index].tags!)
-                                    Text('Tag : ${tag.name}')
-                                ],
-                              ),
                             Text(
-                                'Stock : ${products[index].stocks!.isNotEmpty ? products[index].stocks![0].amount?.actual : 0}'),
+                              'Codes : ${products[index].codes.isNotEmpty ? products[index].codes : ''}',
+                            ),
+                            Text('Name : ${products[index].name}'),
+                            Text(
+                              'Tags : ${products[index].tags.isNotEmpty ? products[index].tags : ''}',
+                            ),
+                            Text(
+                              'Stock : ${products[index].stocks.isNotEmpty ? products[index].stocks : ''}',
+                            ),
                           ],
                         ),
                         separatorBuilder: (context, index) => const Divider(),

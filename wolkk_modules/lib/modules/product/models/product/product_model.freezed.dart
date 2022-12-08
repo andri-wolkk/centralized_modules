@@ -20,16 +20,17 @@ ProductModel _$ProductModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$ProductModel {
-  List<DescriptionModel>? get description => throw _privateConstructorUsedError;
+  List<CodeModel> get codes => throw _privateConstructorUsedError;
+  List<DescriptionModel> get description => throw _privateConstructorUsedError;
   String get id => throw _privateConstructorUsedError;
   ImageModel? get image => throw _privateConstructorUsedError;
-  double? get maxPrice => throw _privateConstructorUsedError;
-  double? get minPrice => throw _privateConstructorUsedError;
+  double get maxPrice => throw _privateConstructorUsedError;
+  double get minPrice => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  List<PriceModel>? get prices => throw _privateConstructorUsedError;
-  List<StockModel>? get stocks => throw _privateConstructorUsedError;
-  List<TagModel>? get tags => throw _privateConstructorUsedError;
-  bool? get trackInventory => throw _privateConstructorUsedError;
+  List<PriceModel> get prices => throw _privateConstructorUsedError;
+  List<StockModel> get stocks => throw _privateConstructorUsedError;
+  List<TagModel> get tags => throw _privateConstructorUsedError;
+  bool get trackInventory => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -44,16 +45,17 @@ abstract class $ProductModelCopyWith<$Res> {
       _$ProductModelCopyWithImpl<$Res, ProductModel>;
   @useResult
   $Res call(
-      {List<DescriptionModel>? description,
+      {List<CodeModel> codes,
+      List<DescriptionModel> description,
       String id,
       ImageModel? image,
-      double? maxPrice,
-      double? minPrice,
+      double maxPrice,
+      double minPrice,
       String name,
-      List<PriceModel>? prices,
-      List<StockModel>? stocks,
-      List<TagModel>? tags,
-      bool? trackInventory});
+      List<PriceModel> prices,
+      List<StockModel> stocks,
+      List<TagModel> tags,
+      bool trackInventory});
 
   $ImageModelCopyWith<$Res>? get image;
 }
@@ -71,22 +73,27 @@ class _$ProductModelCopyWithImpl<$Res, $Val extends ProductModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? description = freezed,
+    Object? codes = null,
+    Object? description = null,
     Object? id = null,
     Object? image = freezed,
-    Object? maxPrice = freezed,
-    Object? minPrice = freezed,
+    Object? maxPrice = null,
+    Object? minPrice = null,
     Object? name = null,
-    Object? prices = freezed,
-    Object? stocks = freezed,
-    Object? tags = freezed,
-    Object? trackInventory = freezed,
+    Object? prices = null,
+    Object? stocks = null,
+    Object? tags = null,
+    Object? trackInventory = null,
   }) {
     return _then(_value.copyWith(
-      description: freezed == description
+      codes: null == codes
+          ? _value.codes
+          : codes // ignore: cast_nullable_to_non_nullable
+              as List<CodeModel>,
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as List<DescriptionModel>?,
+              as List<DescriptionModel>,
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -95,34 +102,34 @@ class _$ProductModelCopyWithImpl<$Res, $Val extends ProductModel>
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as ImageModel?,
-      maxPrice: freezed == maxPrice
+      maxPrice: null == maxPrice
           ? _value.maxPrice
           : maxPrice // ignore: cast_nullable_to_non_nullable
-              as double?,
-      minPrice: freezed == minPrice
+              as double,
+      minPrice: null == minPrice
           ? _value.minPrice
           : minPrice // ignore: cast_nullable_to_non_nullable
-              as double?,
+              as double,
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      prices: freezed == prices
+      prices: null == prices
           ? _value.prices
           : prices // ignore: cast_nullable_to_non_nullable
-              as List<PriceModel>?,
-      stocks: freezed == stocks
+              as List<PriceModel>,
+      stocks: null == stocks
           ? _value.stocks
           : stocks // ignore: cast_nullable_to_non_nullable
-              as List<StockModel>?,
-      tags: freezed == tags
+              as List<StockModel>,
+      tags: null == tags
           ? _value.tags
           : tags // ignore: cast_nullable_to_non_nullable
-              as List<TagModel>?,
-      trackInventory: freezed == trackInventory
+              as List<TagModel>,
+      trackInventory: null == trackInventory
           ? _value.trackInventory
           : trackInventory // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as bool,
     ) as $Val);
   }
 
@@ -148,16 +155,17 @@ abstract class _$$_ProductModelCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {List<DescriptionModel>? description,
+      {List<CodeModel> codes,
+      List<DescriptionModel> description,
       String id,
       ImageModel? image,
-      double? maxPrice,
-      double? minPrice,
+      double maxPrice,
+      double minPrice,
       String name,
-      List<PriceModel>? prices,
-      List<StockModel>? stocks,
-      List<TagModel>? tags,
-      bool? trackInventory});
+      List<PriceModel> prices,
+      List<StockModel> stocks,
+      List<TagModel> tags,
+      bool trackInventory});
 
   @override
   $ImageModelCopyWith<$Res>? get image;
@@ -174,22 +182,27 @@ class __$$_ProductModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? description = freezed,
+    Object? codes = null,
+    Object? description = null,
     Object? id = null,
     Object? image = freezed,
-    Object? maxPrice = freezed,
-    Object? minPrice = freezed,
+    Object? maxPrice = null,
+    Object? minPrice = null,
     Object? name = null,
-    Object? prices = freezed,
-    Object? stocks = freezed,
-    Object? tags = freezed,
-    Object? trackInventory = freezed,
+    Object? prices = null,
+    Object? stocks = null,
+    Object? tags = null,
+    Object? trackInventory = null,
   }) {
     return _then(_$_ProductModel(
-      description: freezed == description
+      codes: null == codes
+          ? _value._codes
+          : codes // ignore: cast_nullable_to_non_nullable
+              as List<CodeModel>,
+      description: null == description
           ? _value._description
           : description // ignore: cast_nullable_to_non_nullable
-              as List<DescriptionModel>?,
+              as List<DescriptionModel>,
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -198,34 +211,34 @@ class __$$_ProductModelCopyWithImpl<$Res>
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as ImageModel?,
-      maxPrice: freezed == maxPrice
+      maxPrice: null == maxPrice
           ? _value.maxPrice
           : maxPrice // ignore: cast_nullable_to_non_nullable
-              as double?,
-      minPrice: freezed == minPrice
+              as double,
+      minPrice: null == minPrice
           ? _value.minPrice
           : minPrice // ignore: cast_nullable_to_non_nullable
-              as double?,
+              as double,
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      prices: freezed == prices
+      prices: null == prices
           ? _value._prices
           : prices // ignore: cast_nullable_to_non_nullable
-              as List<PriceModel>?,
-      stocks: freezed == stocks
+              as List<PriceModel>,
+      stocks: null == stocks
           ? _value._stocks
           : stocks // ignore: cast_nullable_to_non_nullable
-              as List<StockModel>?,
-      tags: freezed == tags
+              as List<StockModel>,
+      tags: null == tags
           ? _value._tags
           : tags // ignore: cast_nullable_to_non_nullable
-              as List<TagModel>?,
-      trackInventory: freezed == trackInventory
+              as List<TagModel>,
+      trackInventory: null == trackInventory
           ? _value.trackInventory
           : trackInventory // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as bool,
     ));
   }
 }
@@ -234,17 +247,19 @@ class __$$_ProductModelCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_ProductModel implements _ProductModel {
   const _$_ProductModel(
-      {final List<DescriptionModel>? description = const [],
+      {final List<CodeModel> codes = const [],
+      final List<DescriptionModel> description = const [],
       required this.id,
       this.image,
       this.maxPrice = 0,
       this.minPrice = 0,
       required this.name,
-      final List<PriceModel>? prices = const [],
-      final List<StockModel>? stocks = const [],
-      final List<TagModel>? tags = const [],
+      final List<PriceModel> prices = const [],
+      final List<StockModel> stocks = const [],
+      final List<TagModel> tags = const [],
       this.trackInventory = true})
-      : _description = description,
+      : _codes = codes,
+        _description = description,
         _prices = prices,
         _stocks = stocks,
         _tags = tags;
@@ -252,14 +267,20 @@ class _$_ProductModel implements _ProductModel {
   factory _$_ProductModel.fromJson(Map<String, dynamic> json) =>
       _$$_ProductModelFromJson(json);
 
-  final List<DescriptionModel>? _description;
+  final List<CodeModel> _codes;
   @override
   @JsonKey()
-  List<DescriptionModel>? get description {
-    final value = _description;
-    if (value == null) return null;
+  List<CodeModel> get codes {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_codes);
+  }
+
+  final List<DescriptionModel> _description;
+  @override
+  @JsonKey()
+  List<DescriptionModel> get description {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_description);
   }
 
   @override
@@ -268,49 +289,43 @@ class _$_ProductModel implements _ProductModel {
   final ImageModel? image;
   @override
   @JsonKey()
-  final double? maxPrice;
+  final double maxPrice;
   @override
   @JsonKey()
-  final double? minPrice;
+  final double minPrice;
   @override
   final String name;
-  final List<PriceModel>? _prices;
+  final List<PriceModel> _prices;
   @override
   @JsonKey()
-  List<PriceModel>? get prices {
-    final value = _prices;
-    if (value == null) return null;
+  List<PriceModel> get prices {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_prices);
   }
 
-  final List<StockModel>? _stocks;
+  final List<StockModel> _stocks;
   @override
   @JsonKey()
-  List<StockModel>? get stocks {
-    final value = _stocks;
-    if (value == null) return null;
+  List<StockModel> get stocks {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_stocks);
   }
 
-  final List<TagModel>? _tags;
+  final List<TagModel> _tags;
   @override
   @JsonKey()
-  List<TagModel>? get tags {
-    final value = _tags;
-    if (value == null) return null;
+  List<TagModel> get tags {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_tags);
   }
 
   @override
   @JsonKey()
-  final bool? trackInventory;
+  final bool trackInventory;
 
   @override
   String toString() {
-    return 'ProductModel(description: $description, id: $id, image: $image, maxPrice: $maxPrice, minPrice: $minPrice, name: $name, prices: $prices, stocks: $stocks, tags: $tags, trackInventory: $trackInventory)';
+    return 'ProductModel(codes: $codes, description: $description, id: $id, image: $image, maxPrice: $maxPrice, minPrice: $minPrice, name: $name, prices: $prices, stocks: $stocks, tags: $tags, trackInventory: $trackInventory)';
   }
 
   @override
@@ -318,6 +333,7 @@ class _$_ProductModel implements _ProductModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_ProductModel &&
+            const DeepCollectionEquality().equals(other._codes, _codes) &&
             const DeepCollectionEquality()
                 .equals(other._description, _description) &&
             (identical(other.id, id) || other.id == id) &&
@@ -338,6 +354,7 @@ class _$_ProductModel implements _ProductModel {
   @override
   int get hashCode => Object.hash(
       runtimeType,
+      const DeepCollectionEquality().hash(_codes),
       const DeepCollectionEquality().hash(_description),
       id,
       image,
@@ -365,40 +382,43 @@ class _$_ProductModel implements _ProductModel {
 
 abstract class _ProductModel implements ProductModel {
   const factory _ProductModel(
-      {final List<DescriptionModel>? description,
+      {final List<CodeModel> codes,
+      final List<DescriptionModel> description,
       required final String id,
       final ImageModel? image,
-      final double? maxPrice,
-      final double? minPrice,
+      final double maxPrice,
+      final double minPrice,
       required final String name,
-      final List<PriceModel>? prices,
-      final List<StockModel>? stocks,
-      final List<TagModel>? tags,
-      final bool? trackInventory}) = _$_ProductModel;
+      final List<PriceModel> prices,
+      final List<StockModel> stocks,
+      final List<TagModel> tags,
+      final bool trackInventory}) = _$_ProductModel;
 
   factory _ProductModel.fromJson(Map<String, dynamic> json) =
       _$_ProductModel.fromJson;
 
   @override
-  List<DescriptionModel>? get description;
+  List<CodeModel> get codes;
+  @override
+  List<DescriptionModel> get description;
   @override
   String get id;
   @override
   ImageModel? get image;
   @override
-  double? get maxPrice;
+  double get maxPrice;
   @override
-  double? get minPrice;
+  double get minPrice;
   @override
   String get name;
   @override
-  List<PriceModel>? get prices;
+  List<PriceModel> get prices;
   @override
-  List<StockModel>? get stocks;
+  List<StockModel> get stocks;
   @override
-  List<TagModel>? get tags;
+  List<TagModel> get tags;
   @override
-  bool? get trackInventory;
+  bool get trackInventory;
   @override
   @JsonKey(ignore: true)
   _$$_ProductModelCopyWith<_$_ProductModel> get copyWith =>
