@@ -6,9 +6,9 @@ class ProductEvent with _$ProductEvent {
     required String key,
     Options? options,
     required String path,
-  }) = FetchProductEvent;
+  }) = ProductFetchEvent;
 
   const factory ProductEvent.search({
     required String keywords,
-  }) = SearchProductEvent;
+  }) = ProductSearchEvent;
 }

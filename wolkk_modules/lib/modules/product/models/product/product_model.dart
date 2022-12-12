@@ -1,6 +1,6 @@
 import 'package:wolkk_core/wolkk_core.dart';
-import 'package:wolkk_modules/modules/product/models/code/code_model.dart';
 
+import '../code/code_model.dart';
 import '../description/description_model.dart';
 import '../image/image_model.dart';
 import '../price/price_model.dart';
@@ -17,6 +17,7 @@ class ProductModel with _$ProductModel {
     @Default([]) List<DescriptionModel> description,
     required String id,
     ImageModel? image,
+    @Default('') String imageBinary,
     @Default(0) double maxPrice,
     @Default(0) double minPrice,
     required String name,

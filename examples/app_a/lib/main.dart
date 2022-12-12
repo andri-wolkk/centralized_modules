@@ -21,6 +21,7 @@ class App extends StatelessWidget {
       builder: (context, state) {
         return MultiBlocProvider(
           providers: [
+            BlocProvider.value(value: GetIt.I<ImageBloc>()),
             BlocProvider.value(value: GetIt.I<ProductBloc>()),
           ],
           child: const MaterialApp(

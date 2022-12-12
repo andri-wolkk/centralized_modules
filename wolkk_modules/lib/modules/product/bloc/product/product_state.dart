@@ -12,10 +12,11 @@ class ProductState with _$ProductState {
     required List<ProductModel> products,
   }) = ProductFetchedState;
 
-  const factory ProductState.loaded({required ProductModel product}) =
-      ProductLoadedState;
+  const factory ProductState.initial() = ProductInitialState;
+
+  const factory ProductState.loaded({
+    required ProductModel product,
+  }) = ProductLoadedState;
 
   const factory ProductState.loading() = ProductLoadingState;
-
-  const factory ProductState.initial() = ProductInitialState;
 }

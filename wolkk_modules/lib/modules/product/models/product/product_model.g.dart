@@ -20,6 +20,7 @@ _$_ProductModel _$$_ProductModelFromJson(Map<String, dynamic> json) =>
       image: json['image'] == null
           ? null
           : ImageModel.fromJson(json['image'] as Map<String, dynamic>),
+      imageBinary: json['imageBinary'] as String? ?? '',
       maxPrice: (json['maxPrice'] as num?)?.toDouble() ?? 0,
       minPrice: (json['minPrice'] as num?)?.toDouble() ?? 0,
       name: json['name'] as String,
@@ -44,6 +45,7 @@ Map<String, dynamic> _$$_ProductModelToJson(_$_ProductModel instance) =>
       'description': instance.description,
       'id': instance.id,
       'image': instance.image,
+      'imageBinary': instance.imageBinary,
       'maxPrice': instance.maxPrice,
       'minPrice': instance.minPrice,
       'name': instance.name,

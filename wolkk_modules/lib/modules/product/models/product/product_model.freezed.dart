@@ -24,6 +24,7 @@ mixin _$ProductModel {
   List<DescriptionModel> get description => throw _privateConstructorUsedError;
   String get id => throw _privateConstructorUsedError;
   ImageModel? get image => throw _privateConstructorUsedError;
+  String get imageBinary => throw _privateConstructorUsedError;
   double get maxPrice => throw _privateConstructorUsedError;
   double get minPrice => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
@@ -49,6 +50,7 @@ abstract class $ProductModelCopyWith<$Res> {
       List<DescriptionModel> description,
       String id,
       ImageModel? image,
+      String imageBinary,
       double maxPrice,
       double minPrice,
       String name,
@@ -77,6 +79,7 @@ class _$ProductModelCopyWithImpl<$Res, $Val extends ProductModel>
     Object? description = null,
     Object? id = null,
     Object? image = freezed,
+    Object? imageBinary = null,
     Object? maxPrice = null,
     Object? minPrice = null,
     Object? name = null,
@@ -102,6 +105,10 @@ class _$ProductModelCopyWithImpl<$Res, $Val extends ProductModel>
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as ImageModel?,
+      imageBinary: null == imageBinary
+          ? _value.imageBinary
+          : imageBinary // ignore: cast_nullable_to_non_nullable
+              as String,
       maxPrice: null == maxPrice
           ? _value.maxPrice
           : maxPrice // ignore: cast_nullable_to_non_nullable
@@ -159,6 +166,7 @@ abstract class _$$_ProductModelCopyWith<$Res>
       List<DescriptionModel> description,
       String id,
       ImageModel? image,
+      String imageBinary,
       double maxPrice,
       double minPrice,
       String name,
@@ -186,6 +194,7 @@ class __$$_ProductModelCopyWithImpl<$Res>
     Object? description = null,
     Object? id = null,
     Object? image = freezed,
+    Object? imageBinary = null,
     Object? maxPrice = null,
     Object? minPrice = null,
     Object? name = null,
@@ -211,6 +220,10 @@ class __$$_ProductModelCopyWithImpl<$Res>
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as ImageModel?,
+      imageBinary: null == imageBinary
+          ? _value.imageBinary
+          : imageBinary // ignore: cast_nullable_to_non_nullable
+              as String,
       maxPrice: null == maxPrice
           ? _value.maxPrice
           : maxPrice // ignore: cast_nullable_to_non_nullable
@@ -251,6 +264,7 @@ class _$_ProductModel implements _ProductModel {
       final List<DescriptionModel> description = const [],
       required this.id,
       this.image,
+      this.imageBinary = '',
       this.maxPrice = 0,
       this.minPrice = 0,
       required this.name,
@@ -289,6 +303,9 @@ class _$_ProductModel implements _ProductModel {
   final ImageModel? image;
   @override
   @JsonKey()
+  final String imageBinary;
+  @override
+  @JsonKey()
   final double maxPrice;
   @override
   @JsonKey()
@@ -325,7 +342,7 @@ class _$_ProductModel implements _ProductModel {
 
   @override
   String toString() {
-    return 'ProductModel(codes: $codes, description: $description, id: $id, image: $image, maxPrice: $maxPrice, minPrice: $minPrice, name: $name, prices: $prices, stocks: $stocks, tags: $tags, trackInventory: $trackInventory)';
+    return 'ProductModel(codes: $codes, description: $description, id: $id, image: $image, imageBinary: $imageBinary, maxPrice: $maxPrice, minPrice: $minPrice, name: $name, prices: $prices, stocks: $stocks, tags: $tags, trackInventory: $trackInventory)';
   }
 
   @override
@@ -338,6 +355,8 @@ class _$_ProductModel implements _ProductModel {
                 .equals(other._description, _description) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.image, image) || other.image == image) &&
+            (identical(other.imageBinary, imageBinary) ||
+                other.imageBinary == imageBinary) &&
             (identical(other.maxPrice, maxPrice) ||
                 other.maxPrice == maxPrice) &&
             (identical(other.minPrice, minPrice) ||
@@ -358,6 +377,7 @@ class _$_ProductModel implements _ProductModel {
       const DeepCollectionEquality().hash(_description),
       id,
       image,
+      imageBinary,
       maxPrice,
       minPrice,
       name,
@@ -386,6 +406,7 @@ abstract class _ProductModel implements ProductModel {
       final List<DescriptionModel> description,
       required final String id,
       final ImageModel? image,
+      final String imageBinary,
       final double maxPrice,
       final double minPrice,
       required final String name,
@@ -405,6 +426,8 @@ abstract class _ProductModel implements ProductModel {
   String get id;
   @override
   ImageModel? get image;
+  @override
+  String get imageBinary;
   @override
   double get maxPrice;
   @override
