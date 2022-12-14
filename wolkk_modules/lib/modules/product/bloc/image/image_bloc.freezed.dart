@@ -17,19 +17,25 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$ImageEvent {
   String get id => throw _privateConstructorUsedError;
+  Options get options => throw _privateConstructorUsedError;
+  String get path => throw _privateConstructorUsedError;
+  String get url => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String id) load,
+    required TResult Function(
+            String id, Options options, String path, String url)
+        load,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String id)? load,
+    TResult? Function(String id, Options options, String path, String url)?
+        load,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String id)? load,
+    TResult Function(String id, Options options, String path, String url)? load,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -61,7 +67,7 @@ abstract class $ImageEventCopyWith<$Res> {
           ImageEvent value, $Res Function(ImageEvent) then) =
       _$ImageEventCopyWithImpl<$Res, ImageEvent>;
   @useResult
-  $Res call({String id});
+  $Res call({String id, Options options, String path, String url});
 }
 
 /// @nodoc
@@ -78,11 +84,26 @@ class _$ImageEventCopyWithImpl<$Res, $Val extends ImageEvent>
   @override
   $Res call({
     Object? id = null,
+    Object? options = null,
+    Object? path = null,
+    Object? url = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      options: null == options
+          ? _value.options
+          : options // ignore: cast_nullable_to_non_nullable
+              as Options,
+      path: null == path
+          ? _value.path
+          : path // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: null == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
               as String,
     ) as $Val);
   }
@@ -96,7 +117,7 @@ abstract class _$$ImageLoadEventCopyWith<$Res>
       __$$ImageLoadEventCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String id});
+  $Res call({String id, Options options, String path, String url});
 }
 
 /// @nodoc
@@ -111,11 +132,26 @@ class __$$ImageLoadEventCopyWithImpl<$Res>
   @override
   $Res call({
     Object? id = null,
+    Object? options = null,
+    Object? path = null,
+    Object? url = null,
   }) {
     return _then(_$ImageLoadEvent(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      options: null == options
+          ? _value.options
+          : options // ignore: cast_nullable_to_non_nullable
+              as Options,
+      path: null == path
+          ? _value.path
+          : path // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: null == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
               as String,
     ));
   }
@@ -124,14 +160,24 @@ class __$$ImageLoadEventCopyWithImpl<$Res>
 /// @nodoc
 
 class _$ImageLoadEvent implements ImageLoadEvent {
-  const _$ImageLoadEvent({required this.id});
+  const _$ImageLoadEvent(
+      {required this.id,
+      required this.options,
+      required this.path,
+      required this.url});
 
   @override
   final String id;
+  @override
+  final Options options;
+  @override
+  final String path;
+  @override
+  final String url;
 
   @override
   String toString() {
-    return 'ImageEvent.load(id: $id)';
+    return 'ImageEvent.load(id: $id, options: $options, path: $path, url: $url)';
   }
 
   @override
@@ -139,11 +185,14 @@ class _$ImageLoadEvent implements ImageLoadEvent {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ImageLoadEvent &&
-            (identical(other.id, id) || other.id == id));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.options, options) || other.options == options) &&
+            (identical(other.path, path) || other.path == path) &&
+            (identical(other.url, url) || other.url == url));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, id);
+  int get hashCode => Object.hash(runtimeType, id, options, path, url);
 
   @JsonKey(ignore: true)
   @override
@@ -154,27 +203,30 @@ class _$ImageLoadEvent implements ImageLoadEvent {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String id) load,
+    required TResult Function(
+            String id, Options options, String path, String url)
+        load,
   }) {
-    return load(id);
+    return load(id, options, path, url);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String id)? load,
+    TResult? Function(String id, Options options, String path, String url)?
+        load,
   }) {
-    return load?.call(id);
+    return load?.call(id, options, path, url);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String id)? load,
+    TResult Function(String id, Options options, String path, String url)? load,
     required TResult orElse(),
   }) {
     if (load != null) {
-      return load(id);
+      return load(id, options, path, url);
     }
     return orElse();
   }
@@ -209,10 +261,20 @@ class _$ImageLoadEvent implements ImageLoadEvent {
 }
 
 abstract class ImageLoadEvent implements ImageEvent {
-  const factory ImageLoadEvent({required final String id}) = _$ImageLoadEvent;
+  const factory ImageLoadEvent(
+      {required final String id,
+      required final Options options,
+      required final String path,
+      required final String url}) = _$ImageLoadEvent;
 
   @override
   String get id;
+  @override
+  Options get options;
+  @override
+  String get path;
+  @override
+  String get url;
   @override
   @JsonKey(ignore: true)
   _$$ImageLoadEventCopyWith<_$ImageLoadEvent> get copyWith =>

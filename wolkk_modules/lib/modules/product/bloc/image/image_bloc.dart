@@ -18,7 +18,13 @@ class ImageBloc extends Bloc<ImageEvent, ImageState> {
   Future<void> _load(ImageLoadEvent event, Emitter<ImageState> emit) async {
     emit(const ImageLoadingState());
     try {
-      await repository.get(id: event.id).then(
+      await repository
+          .get(
+              id: event.id,
+              options: event.options,
+              path: event.path,
+              url: event.url)
+          .then(
         (result) {
           result.fold(
             (l) {

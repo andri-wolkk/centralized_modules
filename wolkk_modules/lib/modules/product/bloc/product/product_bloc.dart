@@ -13,11 +13,54 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
   ProductBloc({required this.repository})
       : super(const ProductState.initial()) {
     on<ProductFetchEvent>(_fetch, transformer: Transformer.getEvent());
-    on<ProductSearchEvent>(_search, transformer: Transformer.getEvent());
+    // on<ProductSearchEvent>(_search, transformer: Transformer.getEvent());
   }
 
   List<ProductModel> products = [];
   final ProductRemoteRepository repository;
+
+  // Future<void> _search(
+  //   ProductSearchEvent event,
+  //   Emitter<ProductState> emit,
+  // ) async {
+  //   emit(const ProductLoadingState());
+  //   try {
+  //     final result = await repository.search(keywords: event.keywords);
+  //     result.fold(
+  //       (l) {
+  //         if (l is ProductFailureState) {
+  //           emit(
+  //             ProductFailureState(
+  //               code: 'SERVER FAILURE',
+  //               message: l.message,
+  //             ),
+  //           );
+  //         }
+  //       },
+  //       (r) {
+  //         if (r.isNotEmpty) {
+  //           products = r;
+  //           emit(ProductFetchedState(products: products));
+  //         }
+  //         if (r.isEmpty) {
+  //           emit(
+  //             const ProductFailureState(
+  //               code: 'NO DATA FAILURE',
+  //               message: 'No Data Found...',
+  //             ),
+  //           );
+  //         }
+  //       },
+  //     );
+  //   } catch (e) {
+  //     emit(
+  //       ProductFailureState(
+  //         code: 'UNEXPECTED FAILURE',
+  //         message: e.toString(),
+  //       ),
+  //     );
+  //   }
+  // }
 
   Future<void> _fetch(
     ProductFetchEvent event,
@@ -26,7 +69,11 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
     emit(const ProductLoadingState());
     try {
       await repository
-          .fetch(key: event.key, options: event.options, path: event.path)
+          .fetch(
+              key: event.key,
+              options: event.options,
+              path: event.path,
+              url: event.url)
           .then(
         (result) {
           result.fold(
@@ -55,49 +102,6 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
               }
             },
           );
-        },
-      );
-    } catch (e) {
-      emit(
-        ProductFailureState(
-          code: 'UNEXPECTED FAILURE',
-          message: e.toString(),
-        ),
-      );
-    }
-  }
-
-  Future<void> _search(
-    ProductSearchEvent event,
-    Emitter<ProductState> emit,
-  ) async {
-    emit(const ProductLoadingState());
-    try {
-      final result = await repository.search(keywords: event.keywords);
-      result.fold(
-        (l) {
-          if (l is ProductFailureState) {
-            emit(
-              ProductFailureState(
-                code: 'SERVER FAILURE',
-                message: l.message,
-              ),
-            );
-          }
-        },
-        (r) {
-          if (r.isNotEmpty) {
-            products = r;
-            emit(ProductFetchedState(products: products));
-          }
-          if (r.isEmpty) {
-            emit(
-              const ProductFailureState(
-                code: 'NO DATA FAILURE',
-                message: 'No Data Found...',
-              ),
-            );
-          }
         },
       );
     } catch (e) {

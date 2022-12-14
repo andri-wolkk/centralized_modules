@@ -1,7 +1,12 @@
 import 'package:wolkk_core/wolkk_core.dart';
 
 abstract class ImageRemoteRepository {
-  Future<Either<ServerFailure, String>> get({required String id});
+  Future<Either<ServerFailure, String>> get({
+    required String id,
+    required Options options,
+    required String path,
+    required String url,
+  });
 }
 
 @LazySingleton(as: ImageRemoteRepository)
@@ -13,17 +18,14 @@ class ImageRemoteRepositoryImpl implements ImageRemoteRepository {
   @override
   Future<Either<ServerFailure, String>> get({
     required String id,
+    required Options options,
+    required String path,
+    required String url,
   }) async {
     try {
       final response = await dio.get(
-        'https://128.koronacloud.com/web/api/v3/accounts/58922ca4-bdb6-4a42-9fb3-e720f5c063c4/images/$id',
-        options: Options(
-          headers: <String, String>{
-            'authorization':
-                'Basic ${base64.encode(utf8.encode('korona_integration:42ea2524-0bc6-470c-9ae2-5f3039d5eb6a'))}',
-          },
-          responseType: ResponseType.bytes,
-        ),
+        '$url/$path/$id',
+        options: options.copyWith(responseType: ResponseType.bytes),
       );
       if (response.statusCode == 200) {
         return Right(base64Encode(response.data));

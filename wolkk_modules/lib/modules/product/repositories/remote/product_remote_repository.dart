@@ -5,19 +5,24 @@ import '../../../modules.dart';
 abstract class ProductRemoteRepository {
   Future<Either<ServerFailure, List<ProductModel>>> fetch({
     required String key,
-    Options? options,
+    required Options options,
     required String path,
+    required String url,
   });
 
-  Future<Either<ServerFailure, ProductModel>> get();
+  // Future<Either<ServerFailure, ProductModel>> get();
 
   Future<Either<ServerFailure, List<StockModel>>> getStock({
     required String id,
+    required String key,
+    required Options options,
+    required String path,
+    required String url,
   });
 
-  Future<Either<ServerFailure, List<ProductModel>>> search({
-    required String keywords,
-  });
+  // Future<Either<ServerFailure, List<ProductModel>>> search({
+  //   required String keywords,
+  // });
 }
 
 @LazySingleton(as: ProductRemoteRepository)
@@ -33,11 +38,12 @@ class ProductRemoteRepositoryImpl implements ProductRemoteRepository {
   @override
   Future<Either<ServerFailure, List<ProductModel>>> fetch({
     required String key,
-    Options? options,
+    required Options options,
     required String path,
+    required String url,
   }) async {
     try {
-      return await dio.get(path, options: options).then(
+      return await dio.get('$url/$path', options: options).then(
         (response) async {
           final stopwatch = Stopwatch()..start();
           if (response.statusCode == 200) {
@@ -46,7 +52,13 @@ class ProductRemoteRepositoryImpl implements ProductRemoteRepository {
               ProductModel product = ProductModel.fromJson(data);
               if (product.trackInventory == true) {
                 List<StockModel> stocks = [];
-                await getStock(id: product.id).then((value) {
+                await getStock(
+                  id: product.id,
+                  key: key,
+                  options: options,
+                  path: 'stocks',
+                  url: '$url/$path',
+                ).then((value) {
                   value.fold(
                     (l) => stocks = [],
                     (r) => stocks = r,
@@ -57,7 +69,11 @@ class ProductRemoteRepositoryImpl implements ProductRemoteRepository {
               if (product.image != null) {
                 String imageBinary = '';
                 await imageRemoteRepository
-                    .get(id: product.image!.id)
+                    .get(
+                        id: product.image!.id,
+                        options: options,
+                        path: 'images',
+                        url: url)
                     .then((value) {
                   value.fold(
                     (l) => imageBinary = '',
@@ -95,47 +111,43 @@ class ProductRemoteRepositoryImpl implements ProductRemoteRepository {
     }
   }
 
-  @override
-  Future<Either<ServerFailure, ProductModel>> get() async {
-    try {
-      final response = await dio.get(
-        'https://128.koronacloud.com/web/api/v3/accounts/58922ca4-bdb6-4a42-9fb3-e720f5c063c4/products/7b8a8198-2238-4c20-8902-59576f15a7ff',
-        options: Options(headers: <String, String>{
-          'authorization':
-              'Basic ${base64.encode(utf8.encode('korona_integration:42ea2524-0bc6-470c-9ae2-5f3039d5eb6a'))}',
-        }),
-      );
-      return Right(ProductModel.fromJson(response.data));
-    } on DioError catch (e) {
-      return Left(
-        ServerFailure(
-          code: (e.response?.statusCode).toString(),
-          message: e.response?.data['message'],
-          statusCode: (e.response?.statusCode)!,
-        ),
-      );
-    } on Exception catch (e) {
-      throw ServerException(message: e.toString());
-    }
-  }
+  // @override
+  // Future<Either<ServerFailure, ProductModel>> get() async {
+  //   try {
+  //     final response = await dio.get(
+  //       'https://128.koronacloud.com/web/api/v3/accounts/58922ca4-bdb6-4a42-9fb3-e720f5c063c4/products/7b8a8198-2238-4c20-8902-59576f15a7ff',
+  //       options: Options(headers: <String, String>{
+  //         'authorization':
+  //             'Basic ${base64.encode(utf8.encode('korona_integration:42ea2524-0bc6-470c-9ae2-5f3039d5eb6a'))}',
+  //       }),
+  //     );
+  //     return Right(ProductModel.fromJson(response.data));
+  //   } on DioError catch (e) {
+  //     return Left(
+  //       ServerFailure(
+  //         code: (e.response?.statusCode).toString(),
+  //         message: e.response?.data['message'],
+  //         statusCode: (e.response?.statusCode)!,
+  //       ),
+  //     );
+  //   } on Exception catch (e) {
+  //     throw ServerException(message: e.toString());
+  //   }
+  // }
 
   @override
   Future<Either<ServerFailure, List<StockModel>>> getStock({
     required String id,
+    required String key,
+    required Options options,
+    required String path,
+    required String url,
   }) async {
     try {
-      return await dio
-          .get(
-        'https://128.koronacloud.com/web/api/v3/accounts/58922ca4-bdb6-4a42-9fb3-e720f5c063c4/products/$id/stocks',
-        options: Options(headers: <String, String>{
-          'authorization':
-              'Basic ${base64.encode(utf8.encode('korona_integration:42ea2524-0bc6-470c-9ae2-5f3039d5eb6a'))}',
-        }),
-      )
-          .then((response) {
+      return await dio.get('$url/$id/$path', options: options).then((response) {
         List<StockModel> stocks = [];
         if (response.statusCode == 200) {
-          for (var data in response.data['results']) {
+          for (var data in response.data[key]) {
             StockModel stock = StockModel.fromJson(data);
             stocks.add(stock);
           }
@@ -163,44 +175,44 @@ class ProductRemoteRepositoryImpl implements ProductRemoteRepository {
     }
   }
 
-  @override
-  Future<Either<ServerFailure, List<ProductModel>>> search({
-    required String keywords,
-  }) async {
-    try {
-      final response = await dio.get(
-        'https://128.koronacloud.com/web/api/v3/accounts/58922ca4-bdb6-4a42-9fb3-e720f5c063c4/products?name=%$keywords%',
-        options: Options(headers: <String, String>{
-          'authorization':
-              'Basic ${base64.encode(utf8.encode('korona_integration:42ea2524-0bc6-470c-9ae2-5f3039d5eb6a'))}',
-        }),
-      );
-      if (response.data.isNotEmpty) {
-        List<ProductModel> products = [];
-        response.data['results'].forEach((value) async {
-          ProductModel product = ProductModel.fromJson(value);
-          products.add(product);
-        });
-        return Right(products);
-      } else {
-        return const Left(
-          ServerFailure(
-            code: 'UNEXPECTED_FAILURE',
-            message: 'Failed to fetch product in remote source...',
-            statusCode: 500,
-          ),
-        );
-      }
-    } on DioError catch (e) {
-      return Left(
-        ServerFailure(
-          code: (e.response?.statusCode).toString(),
-          message: e.response?.data['message'],
-          statusCode: (e.response?.statusCode)!,
-        ),
-      );
-    } on Exception catch (e) {
-      throw ServerException(message: e.toString());
-    }
-  }
+  // @override
+  // Future<Either<ServerFailure, List<ProductModel>>> search({
+  //   required String keywords,
+  // }) async {
+  //   try {
+  //     final response = await dio.get(
+  //       'https://128.koronacloud.com/web/api/v3/accounts/58922ca4-bdb6-4a42-9fb3-e720f5c063c4/products?name=%$keywords%',
+  //       options: Options(headers: <String, String>{
+  //         'authorization':
+  //             'Basic ${base64.encode(utf8.encode('korona_integration:42ea2524-0bc6-470c-9ae2-5f3039d5eb6a'))}',
+  //       }),
+  //     );
+  //     if (response.data.isNotEmpty) {
+  //       List<ProductModel> products = [];
+  //       response.data['results'].forEach((value) async {
+  //         ProductModel product = ProductModel.fromJson(value);
+  //         products.add(product);
+  //       });
+  //       return Right(products);
+  //     } else {
+  //       return const Left(
+  //         ServerFailure(
+  //           code: 'UNEXPECTED_FAILURE',
+  //           message: 'Failed to fetch product in remote source...',
+  //           statusCode: 500,
+  //         ),
+  //       );
+  //     }
+  //   } on DioError catch (e) {
+  //     return Left(
+  //       ServerFailure(
+  //         code: (e.response?.statusCode).toString(),
+  //         message: e.response?.data['message'],
+  //         statusCode: (e.response?.statusCode)!,
+  //       ),
+  //     );
+  //   } on Exception catch (e) {
+  //     throw ServerException(message: e.toString());
+  //   }
+  // }
 }

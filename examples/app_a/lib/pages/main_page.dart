@@ -10,8 +10,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  final Dio dio = Dio();
-
   final TextEditingController _searchController = TextEditingController();
 
   @override
@@ -26,15 +24,19 @@ class _MainPageState extends State<MainPage> {
     GetIt.I<ProductBloc>().add(
       ProductEvent.fetch(
         key: Korona.results,
-        path: Korona.fetchProductPath,
-        options: Options(
-          headers: <String, String>{
-            'authorization':
-                'Basic ${base64.encode(utf8.encode('${Korona.username}:${Korona.password}'))}',
-          },
-        ),
+        options: Korona.options,
+        path: 'products',
+        url: Korona.baseUrl,
       ),
     );
+    // GetIt.I<ProductBloc>().add(
+    //   ProductEvent.fetch(
+    //     key: Korona.results,
+    //     options: Korona.options,
+    //     path: 'products',
+    //     url: Korona.baseUrl,
+    //   ),
+    // );
     // _searchController.addListener(
     //   () {
     //     GetIt.I<ProductBloc>().add(
@@ -115,14 +117,6 @@ class _MainPageState extends State<MainPage> {
                                       CrossAxisAlignment.stretch,
                                   children: [
                                     Text(
-                                      'ImageBinary : ${products[index].imageBinary}',
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                    Text(
-                                      'Image : ${products[index].image ?? ''}',
-                                    ),
-                                    Text(
                                       'Codes : ${products[index].codes.isNotEmpty ? products[index].codes : ''}',
                                     ),
                                     Text('Name : ${products[index].name}'),
@@ -150,9 +144,9 @@ class _MainPageState extends State<MainPage> {
           navigation: Container(
             color: Colors.redAccent,
           ),
-          // secondary: Container(
-          //   color: Colors.greenAccent,
-          // ),
+          secondary: Container(
+            color: Colors.greenAccent,
+          ),
         ),
       ),
     );

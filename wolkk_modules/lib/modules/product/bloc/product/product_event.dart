@@ -4,8 +4,9 @@ part of 'product_bloc.dart';
 class ProductEvent with _$ProductEvent {
   const factory ProductEvent.fetch({
     required String key,
-    Options? options,
+    required Options options,
     required String path,
+    required String url,
   }) = ProductFetchEvent;
 
   const factory ProductEvent.search({
