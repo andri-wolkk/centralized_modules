@@ -8,9 +8,7 @@ part of 'stock_model.dart';
 
 _$_StockModel _$$_StockModelFromJson(Map<String, dynamic> json) =>
     _$_StockModel(
-      amount: json['amount'] == null
-          ? null
-          : AmountModel.fromJson(json['amount'] as Map<String, dynamic>),
+      amount: AmountModel.fromJson(json['amount'] as Map<String, dynamic>),
       warehouse:
           WarehouseModel.fromJson(json['warehouse'] as Map<String, dynamic>),
     );

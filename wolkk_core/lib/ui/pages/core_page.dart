@@ -22,7 +22,10 @@ class CorePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   SizedBox(
-                    height: 85.w,
+                    height: corePanel.panel.header.toString() ==
+                            const SizedBox.shrink().toString()
+                        ? 0.w
+                        : 85.w,
                     child: corePanel.panel.header,
                   ),
                   Expanded(
@@ -31,7 +34,10 @@ class CorePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         SizedBox(
-                          width: 85.w,
+                          width: corePanel.panel.navigation.toString() ==
+                                  const SizedBox.shrink().toString()
+                              ? 0.w
+                              : 85.w,
                           child: corePanel.panel.navigation,
                         ),
                         Expanded(
@@ -49,7 +55,7 @@ class CorePage extends StatelessWidget {
               width: corePanel.panel.secondary.toString() ==
                       const SizedBox.shrink().toString()
                   ? 0.w
-                  : 450.w,
+                  : MediaQuery.of(context).size.width * 0.325,
               child: corePanel.panel.secondary,
             ),
           ],

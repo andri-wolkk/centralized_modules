@@ -18,23 +18,19 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$ProductEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(
-            String key, Options options, String path, String url)
-        fetch,
+    required TResult Function(String path) fetch,
     required TResult Function(String keywords) search,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String key, Options options, String path, String url)?
-        fetch,
+    TResult? Function(String path)? fetch,
     TResult? Function(String keywords)? search,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String key, Options options, String path, String url)?
-        fetch,
+    TResult Function(String path)? fetch,
     TResult Function(String keywords)? search,
     required TResult orElse(),
   }) =>
@@ -84,7 +80,7 @@ abstract class _$$ProductFetchEventCopyWith<$Res> {
           _$ProductFetchEvent value, $Res Function(_$ProductFetchEvent) then) =
       __$$ProductFetchEventCopyWithImpl<$Res>;
   @useResult
-  $Res call({String key, Options options, String path, String url});
+  $Res call({String path});
 }
 
 /// @nodoc
@@ -98,27 +94,12 @@ class __$$ProductFetchEventCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? key = null,
-    Object? options = null,
     Object? path = null,
-    Object? url = null,
   }) {
     return _then(_$ProductFetchEvent(
-      key: null == key
-          ? _value.key
-          : key // ignore: cast_nullable_to_non_nullable
-              as String,
-      options: null == options
-          ? _value.options
-          : options // ignore: cast_nullable_to_non_nullable
-              as Options,
       path: null == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: null == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
               as String,
     ));
   }
@@ -127,24 +108,14 @@ class __$$ProductFetchEventCopyWithImpl<$Res>
 /// @nodoc
 
 class _$ProductFetchEvent implements ProductFetchEvent {
-  const _$ProductFetchEvent(
-      {required this.key,
-      required this.options,
-      required this.path,
-      required this.url});
+  const _$ProductFetchEvent({required this.path});
 
   @override
-  final String key;
-  @override
-  final Options options;
-  @override
   final String path;
-  @override
-  final String url;
 
   @override
   String toString() {
-    return 'ProductEvent.fetch(key: $key, options: $options, path: $path, url: $url)';
+    return 'ProductEvent.fetch(path: $path)';
   }
 
   @override
@@ -152,14 +123,11 @@ class _$ProductFetchEvent implements ProductFetchEvent {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ProductFetchEvent &&
-            (identical(other.key, key) || other.key == key) &&
-            (identical(other.options, options) || other.options == options) &&
-            (identical(other.path, path) || other.path == path) &&
-            (identical(other.url, url) || other.url == url));
+            (identical(other.path, path) || other.path == path));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, key, options, path, url);
+  int get hashCode => Object.hash(runtimeType, path);
 
   @JsonKey(ignore: true)
   @override
@@ -170,34 +138,30 @@ class _$ProductFetchEvent implements ProductFetchEvent {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(
-            String key, Options options, String path, String url)
-        fetch,
+    required TResult Function(String path) fetch,
     required TResult Function(String keywords) search,
   }) {
-    return fetch(key, options, path, url);
+    return fetch(path);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String key, Options options, String path, String url)?
-        fetch,
+    TResult? Function(String path)? fetch,
     TResult? Function(String keywords)? search,
   }) {
-    return fetch?.call(key, options, path, url);
+    return fetch?.call(path);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String key, Options options, String path, String url)?
-        fetch,
+    TResult Function(String path)? fetch,
     TResult Function(String keywords)? search,
     required TResult orElse(),
   }) {
     if (fetch != null) {
-      return fetch(key, options, path, url);
+      return fetch(path);
     }
     return orElse();
   }
@@ -235,16 +199,10 @@ class _$ProductFetchEvent implements ProductFetchEvent {
 }
 
 abstract class ProductFetchEvent implements ProductEvent {
-  const factory ProductFetchEvent(
-      {required final String key,
-      required final Options options,
-      required final String path,
-      required final String url}) = _$ProductFetchEvent;
+  const factory ProductFetchEvent({required final String path}) =
+      _$ProductFetchEvent;
 
-  String get key;
-  Options get options;
   String get path;
-  String get url;
   @JsonKey(ignore: true)
   _$$ProductFetchEventCopyWith<_$ProductFetchEvent> get copyWith =>
       throw _privateConstructorUsedError;
@@ -316,9 +274,7 @@ class _$ProductSearchEvent implements ProductSearchEvent {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(
-            String key, Options options, String path, String url)
-        fetch,
+    required TResult Function(String path) fetch,
     required TResult Function(String keywords) search,
   }) {
     return search(keywords);
@@ -327,8 +283,7 @@ class _$ProductSearchEvent implements ProductSearchEvent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String key, Options options, String path, String url)?
-        fetch,
+    TResult? Function(String path)? fetch,
     TResult? Function(String keywords)? search,
   }) {
     return search?.call(keywords);
@@ -337,8 +292,7 @@ class _$ProductSearchEvent implements ProductSearchEvent {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String key, Options options, String path, String url)?
-        fetch,
+    TResult Function(String path)? fetch,
     TResult Function(String keywords)? search,
     required TResult orElse(),
   }) {

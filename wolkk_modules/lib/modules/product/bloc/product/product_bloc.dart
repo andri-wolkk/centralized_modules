@@ -68,13 +68,7 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
   ) async {
     emit(const ProductLoadingState());
     try {
-      await repository
-          .fetch(
-              key: event.key,
-              options: event.options,
-              path: event.path,
-              url: event.url)
-          .then(
+      await repository.fetch(path: event.path).then(
         (result) {
           result.fold(
             (l) {

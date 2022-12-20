@@ -10,21 +10,15 @@ part 'image_state.dart';
 @singleton
 class ImageBloc extends Bloc<ImageEvent, ImageState> {
   ImageBloc({required this.repository}) : super(const ImageInitialState()) {
-    on<ImageLoadEvent>(_load, transformer: Transformer.getEvent());
+    on<ImageGetEvent>(_get, transformer: Transformer.getEvent());
   }
 
   final ImageRemoteRepository repository;
 
-  Future<void> _load(ImageLoadEvent event, Emitter<ImageState> emit) async {
+  Future<void> _get(ImageGetEvent event, Emitter<ImageState> emit) async {
     emit(const ImageLoadingState());
     try {
-      await repository
-          .get(
-              id: event.id,
-              options: event.options,
-              path: event.path,
-              url: event.url)
-          .then(
+      await repository.get(id: event.id, path: event.path).then(
         (result) {
           result.fold(
             (l) {

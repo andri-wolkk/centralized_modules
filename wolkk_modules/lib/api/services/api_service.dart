@@ -36,32 +36,11 @@ abstract class ApiService {
   });
 }
 
-@LazySingleton(as: ApiService)
+@Singleton(as: ApiService)
 class ApiServiceImpl implements ApiService {
-  ApiServiceImpl({
-    required this.baseUrl,
-    required this.dio,
-    required this.password,
-    required this.username,
-  }) : super() {
-    dio.interceptors.add(InterceptorsWrapper(
-      onRequest: (options, handler) async {
-        options.headers['Content-Type'] = 'application/json';
-        options.headers['Authorization'] =
-            'Basic ${base64.encode(utf8.encode('$username:$password'))}';
-        return handler.next(options);
-      },
-      onResponse: (response, handler) async => handler.next(response),
-      onError: (error, handler) async {
-        return handler.next(error);
-      },
-    ));
-  }
+  ApiServiceImpl({required this.dio});
 
-  final String baseUrl;
   final Dio dio;
-  final String password;
-  final String username;
 
   @override
   Future<Response> delete({

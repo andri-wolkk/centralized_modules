@@ -1,7 +1,5 @@
 import 'package:wolkk_modules/wolkk_modules.dart';
 
-import '../const/korona.dart';
-
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
 
@@ -22,30 +20,8 @@ class _MainPageState extends State<MainPage> {
   void initState() {
     super.initState();
     GetIt.I<ProductBloc>().add(
-      ProductEvent.fetch(
-        key: Korona.results,
-        options: Korona.options,
-        path: 'products',
-        url: Korona.baseUrl,
-      ),
+      const ProductEvent.fetch(path: '/products'),
     );
-    // GetIt.I<ProductBloc>().add(
-    //   ProductEvent.fetch(
-    //     key: Korona.results,
-    //     options: Korona.options,
-    //     path: 'products',
-    //     url: Korona.baseUrl,
-    //   ),
-    // );
-    // _searchController.addListener(
-    //   () {
-    //     GetIt.I<ProductBloc>().add(
-    //       ProductEvent.search(
-    //         keywords: _searchController.text,
-    //       ),
-    //     );
-    //   },
-    // );
   }
 
   @override
@@ -75,6 +51,12 @@ class _MainPageState extends State<MainPage> {
                 ),
                 Expanded(
                   child: BlocBuilder<ProductBloc, ProductState>(
+                    // builder: (context, state) {
+                    //   log('[debug] state : $state');
+                    //   return Container(
+                    //     color: Colors.amber,
+                    //   );
+                    // },
                     builder: (context, state) => state.maybeWhen(
                       orElse: () {
                         return const Center(
@@ -91,49 +73,19 @@ class _MainPageState extends State<MainPage> {
                           Text('Image : ${product.image}'),
                         ],
                       ),
-                      fetched: (products) => ListView.separated(
-                        shrinkWrap: true,
-                        itemBuilder: (context, index) {
-                          return Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              products[index].imageBinary.isNotEmpty
-                                  ? Image.memory(
-                                      base64Decode(products[index].imageBinary),
-                                      height: 50,
-                                      width: 50,
-                                    )
-                                  : Image.network(
-                                      'https://cdn3.iconfinder.com/data/icons/design-n-code/100/272127c4-8d19-4bd3-bd22-2b75ce94ccb4-512.png',
-                                      height: 50,
-                                    ),
-                              const SizedBox(width: 8),
-                              Expanded(
-                                child: Column(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceAround,
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.stretch,
-                                  children: [
-                                    Text(
-                                      'Codes : ${products[index].codes.isNotEmpty ? products[index].codes : ''}',
-                                    ),
-                                    Text('Name : ${products[index].name}'),
-                                    Text(
-                                      'Tags : ${products[index].tags.isNotEmpty ? products[index].tags : ''}',
-                                    ),
-                                    Text(
-                                      'Stock : ${products[index].stocks.isNotEmpty ? products[index].stocks : ''}',
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          );
-                        },
-                        separatorBuilder: (context, index) => const Divider(),
-                        itemCount: products.length,
+                      fetched: (products) => GridView.count(
+                        scrollDirection: Axis.vertical,
+                        childAspectRatio:
+                            (MediaQuery.of(context).size.height / 2) /
+                                (MediaQuery.of(context).size.width / 2),
+                        crossAxisCount: 4,
+                        mainAxisSpacing: 15.w,
+                        crossAxisSpacing: 15.w,
+                        physics: const AlwaysScrollableScrollPhysics(),
+                        children: products
+                            .map((product) =>
+                                ProductCardWidget(product: product))
+                            .toList(),
                       ),
                     ),
                   ),

@@ -20,7 +20,7 @@ StockModel _$StockModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$StockModel {
-  AmountModel? get amount => throw _privateConstructorUsedError;
+  AmountModel get amount => throw _privateConstructorUsedError;
   WarehouseModel get warehouse => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -35,9 +35,9 @@ abstract class $StockModelCopyWith<$Res> {
           StockModel value, $Res Function(StockModel) then) =
       _$StockModelCopyWithImpl<$Res, StockModel>;
   @useResult
-  $Res call({AmountModel? amount, WarehouseModel warehouse});
+  $Res call({AmountModel amount, WarehouseModel warehouse});
 
-  $AmountModelCopyWith<$Res>? get amount;
+  $AmountModelCopyWith<$Res> get amount;
   $WarehouseModelCopyWith<$Res> get warehouse;
 }
 
@@ -54,14 +54,14 @@ class _$StockModelCopyWithImpl<$Res, $Val extends StockModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? amount = freezed,
+    Object? amount = null,
     Object? warehouse = null,
   }) {
     return _then(_value.copyWith(
-      amount: freezed == amount
+      amount: null == amount
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
-              as AmountModel?,
+              as AmountModel,
       warehouse: null == warehouse
           ? _value.warehouse
           : warehouse // ignore: cast_nullable_to_non_nullable
@@ -71,12 +71,8 @@ class _$StockModelCopyWithImpl<$Res, $Val extends StockModel>
 
   @override
   @pragma('vm:prefer-inline')
-  $AmountModelCopyWith<$Res>? get amount {
-    if (_value.amount == null) {
-      return null;
-    }
-
-    return $AmountModelCopyWith<$Res>(_value.amount!, (value) {
+  $AmountModelCopyWith<$Res> get amount {
+    return $AmountModelCopyWith<$Res>(_value.amount, (value) {
       return _then(_value.copyWith(amount: value) as $Val);
     });
   }
@@ -98,10 +94,10 @@ abstract class _$$_StockModelCopyWith<$Res>
       __$$_StockModelCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({AmountModel? amount, WarehouseModel warehouse});
+  $Res call({AmountModel amount, WarehouseModel warehouse});
 
   @override
-  $AmountModelCopyWith<$Res>? get amount;
+  $AmountModelCopyWith<$Res> get amount;
   @override
   $WarehouseModelCopyWith<$Res> get warehouse;
 }
@@ -117,14 +113,14 @@ class __$$_StockModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? amount = freezed,
+    Object? amount = null,
     Object? warehouse = null,
   }) {
     return _then(_$_StockModel(
-      amount: freezed == amount
+      amount: null == amount
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
-              as AmountModel?,
+              as AmountModel,
       warehouse: null == warehouse
           ? _value.warehouse
           : warehouse // ignore: cast_nullable_to_non_nullable
@@ -136,13 +132,13 @@ class __$$_StockModelCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_StockModel implements _StockModel {
-  const _$_StockModel({this.amount, required this.warehouse});
+  const _$_StockModel({required this.amount, required this.warehouse});
 
   factory _$_StockModel.fromJson(Map<String, dynamic> json) =>
       _$$_StockModelFromJson(json);
 
   @override
-  final AmountModel? amount;
+  final AmountModel amount;
   @override
   final WarehouseModel warehouse;
 
@@ -181,14 +177,14 @@ class _$_StockModel implements _StockModel {
 
 abstract class _StockModel implements StockModel {
   const factory _StockModel(
-      {final AmountModel? amount,
+      {required final AmountModel amount,
       required final WarehouseModel warehouse}) = _$_StockModel;
 
   factory _StockModel.fromJson(Map<String, dynamic> json) =
       _$_StockModel.fromJson;
 
   @override
-  AmountModel? get amount;
+  AmountModel get amount;
   @override
   WarehouseModel get warehouse;
   @override

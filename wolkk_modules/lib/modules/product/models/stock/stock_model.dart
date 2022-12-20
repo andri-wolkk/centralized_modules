@@ -9,7 +9,7 @@ part 'stock_model.g.dart';
 @freezed
 class StockModel with _$StockModel {
   const factory StockModel({
-    AmountModel? amount,
+    required AmountModel amount,
     required WarehouseModel warehouse,
   }) = _StockModel;
 

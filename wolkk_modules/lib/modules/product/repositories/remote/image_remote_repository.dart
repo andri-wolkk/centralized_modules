@@ -1,31 +1,29 @@
 import 'package:wolkk_core/wolkk_core.dart';
 
+import '../../../../api/api.dart';
+
 abstract class ImageRemoteRepository {
   Future<Either<ServerFailure, String>> get({
     required String id,
-    required Options options,
     required String path,
-    required String url,
   });
 }
 
 @LazySingleton(as: ImageRemoteRepository)
 class ImageRemoteRepositoryImpl implements ImageRemoteRepository {
-  ImageRemoteRepositoryImpl({required this.dio});
+  ImageRemoteRepositoryImpl({required this.api});
 
-  final Dio dio;
+  final ApiService api;
 
   @override
   Future<Either<ServerFailure, String>> get({
     required String id,
-    required Options options,
     required String path,
-    required String url,
   }) async {
     try {
-      final response = await dio.get(
-        '$url/$path/$id',
-        options: options.copyWith(responseType: ResponseType.bytes),
+      final response = await api.get(
+        path: '$path/$id',
+        options: Options(responseType: ResponseType.bytes),
       );
       if (response.statusCode == 200) {
         return Right(base64Encode(response.data));

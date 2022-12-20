@@ -126,16 +126,18 @@ class __$$_PanelModelCopyWithImpl<$Res>
 
 class _$_PanelModel implements _PanelModel {
   const _$_PanelModel(
-      {required this.header,
+      {this.header = const SizedBox.shrink(),
       required this.main,
-      required this.navigation,
+      this.navigation = const SizedBox.shrink(),
       this.secondary = const SizedBox.shrink()});
 
   @override
+  @JsonKey()
   final Widget header;
   @override
   final Widget main;
   @override
+  @JsonKey()
   final Widget navigation;
   @override
   @JsonKey()
@@ -172,9 +174,9 @@ class _$_PanelModel implements _PanelModel {
 
 abstract class _PanelModel implements PanelModel {
   const factory _PanelModel(
-      {required final Widget header,
+      {final Widget header,
       required final Widget main,
-      required final Widget navigation,
+      final Widget navigation,
       final Widget secondary}) = _$_PanelModel;
 
   @override

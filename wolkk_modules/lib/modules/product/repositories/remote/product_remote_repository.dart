@@ -1,23 +1,18 @@
 import 'package:wolkk_core/wolkk_core.dart';
 
+import '../../../../api/api.dart';
 import '../../../modules.dart';
 
 abstract class ProductRemoteRepository {
   Future<Either<ServerFailure, List<ProductModel>>> fetch({
-    required String key,
-    required Options options,
     required String path,
-    required String url,
   });
 
   // Future<Either<ServerFailure, ProductModel>> get();
 
   Future<Either<ServerFailure, List<StockModel>>> getStock({
     required String id,
-    required String key,
-    required Options options,
     required String path,
-    required String url,
   });
 
   // Future<Either<ServerFailure, List<ProductModel>>> search({
@@ -28,76 +23,63 @@ abstract class ProductRemoteRepository {
 @LazySingleton(as: ProductRemoteRepository)
 class ProductRemoteRepositoryImpl implements ProductRemoteRepository {
   ProductRemoteRepositoryImpl({
-    required this.dio,
+    required this.api,
     required this.imageRemoteRepository,
   });
 
-  final Dio dio;
+  final ApiService api;
   final ImageRemoteRepository imageRemoteRepository;
 
   @override
   Future<Either<ServerFailure, List<ProductModel>>> fetch({
-    required String key,
-    required Options options,
     required String path,
-    required String url,
   }) async {
     try {
-      return await dio.get('$url/$path', options: options).then(
-        (response) async {
-          final stopwatch = Stopwatch()..start();
-          if (response.statusCode == 200) {
-            List<ProductModel> products = [];
-            for (var data in response.data[key]) {
-              ProductModel product = ProductModel.fromJson(data);
-              if (product.trackInventory == true) {
-                List<StockModel> stocks = [];
-                await getStock(
-                  id: product.id,
-                  key: key,
-                  options: options,
-                  path: 'stocks',
-                  url: '$url/$path',
-                ).then((value) {
-                  value.fold(
-                    (l) => stocks = [],
-                    (r) => stocks = r,
-                  );
-                  product = product.copyWith(stocks: stocks);
-                });
-              }
-              if (product.image != null) {
-                String imageBinary = '';
-                await imageRemoteRepository
-                    .get(
-                        id: product.image!.id,
-                        options: options,
-                        path: 'images',
-                        url: url)
-                    .then((value) {
-                  value.fold(
-                    (l) => imageBinary = '',
-                    (r) => imageBinary = r,
-                  );
-                  product = product.copyWith(imageBinary: imageBinary);
-                });
-              }
-              products.add(product);
-            }
-            stopwatch.stop();
-            log('[debug] time : executed in ${stopwatch.elapsed}');
-            return Right(products);
-          } else {
-            return Left(
-              ServerFailure(
-                code: response.statusCode.toString(),
-                message: response.statusMessage!,
-                statusCode: response.statusCode!,
-              ),
-            );
+      final response = await api.get(path: path);
+      final stopwatch = Stopwatch()..start();
+      if (response.statusCode == 200) {
+        List<ProductModel> products = [];
+        for (var data in response.data['results']) {
+          ProductModel product = ProductModel.fromJson(data);
+          if (product.trackInventory == true) {
+            List<StockModel> stocks = [];
+            await getStock(
+              id: product.id,
+              path: '/products/${product.id}/stocks',
+            ).then((value) {
+              value.fold(
+                (l) => stocks = [],
+                (r) => stocks = r,
+              );
+              product = product.copyWith(stocks: stocks);
+            });
           }
-        },
-      );
+          if (product.image != null) {
+            String imageBinary = '';
+            await imageRemoteRepository
+                .get(id: product.image!.id, path: '/images')
+                .then((value) {
+              value.fold(
+                (l) => imageBinary = '',
+                (r) => imageBinary = r,
+              );
+              product = product.copyWith(imageBinary: imageBinary);
+            });
+          }
+          products.add(product);
+        }
+        stopwatch.stop();
+        log('[debug] time : executed in ${stopwatch.elapsed}');
+        return Right(products);
+      } else {
+        return Left(
+          ServerFailure(
+            code: response.statusCode.toString(),
+            message: response.statusMessage!,
+            statusCode: response.statusCode!,
+          ),
+        );
+      }
     } on DioError catch (e) {
       return Left(
         ServerFailure(
@@ -138,30 +120,45 @@ class ProductRemoteRepositoryImpl implements ProductRemoteRepository {
   @override
   Future<Either<ServerFailure, List<StockModel>>> getStock({
     required String id,
-    required String key,
-    required Options options,
     required String path,
-    required String url,
   }) async {
     try {
-      return await dio.get('$url/$id/$path', options: options).then((response) {
+      final response = await api.get(path: path);
+      if (response.statusCode == 200) {
         List<StockModel> stocks = [];
-        if (response.statusCode == 200) {
-          for (var data in response.data[key]) {
-            StockModel stock = StockModel.fromJson(data);
-            stocks.add(stock);
-          }
-          return Right(stocks);
-        } else {
-          return const Left(
-            ServerFailure(
-              code: 'UNEXPECTED_FAILURE',
-              message: 'Failed to fetch product in remote source...',
-              statusCode: 500,
-            ),
-          );
+        for (var data in response.data['results']) {
+          // log('[debug] stock : $data');
+          StockModel stock = StockModel.fromJson(data);
+          stocks.add(stock);
         }
-      });
+        return Right(stocks);
+      } else {
+        return const Left(
+          ServerFailure(
+            code: 'UNEXPECTED_FAILURE',
+            message: 'Failed to fetch product in remote source...',
+            statusCode: 500,
+          ),
+        );
+      }
+      // return await dio.get('$url/$id/$path', options: options).then((response) {
+      //   List<StockModel> stocks = [];
+      //   if (response.statusCode == 200) {
+      //     for (var data in response.data[key]) {
+      //       StockModel stock = StockModel.fromJson(data);
+      //       stocks.add(stock);
+      //     }
+      //     return Right(stocks);
+      //   } else {
+      //     return const Left(
+      //       ServerFailure(
+      //         code: 'UNEXPECTED_FAILURE',
+      //         message: 'Failed to fetch product in remote source...',
+      //         statusCode: 500,
+      //       ),
+      //     );
+      //   }
+      // });
     } on DioError catch (e) {
       return Left(
         ServerFailure(

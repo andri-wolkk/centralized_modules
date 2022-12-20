@@ -4,9 +4,14 @@ import 'pages/main_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // const ApiModel(source: Source.korona);
-  await configureDependencies('environment');
-  runApp(const App());
+  await dotenv.load(fileName: '.env');
+  await configureDependencies('environtment');
+  runApp(
+    DevicePreview(
+      enabled: false, //!kReleaseMode,
+      builder: (context) => const App(),
+    ),
+  );
 }
 
 class App extends StatelessWidget {
@@ -24,8 +29,11 @@ class App extends StatelessWidget {
             BlocProvider.value(value: GetIt.I<ImageBloc>()),
             BlocProvider.value(value: GetIt.I<ProductBloc>()),
           ],
-          child: const MaterialApp(
-            home: MainPage(),
+          child: MaterialApp(
+            useInheritedMediaQuery: true,
+            locale: DevicePreview.locale(context),
+            builder: DevicePreview.appBuilder,
+            home: const MainPage(),
           ),
         );
       },
