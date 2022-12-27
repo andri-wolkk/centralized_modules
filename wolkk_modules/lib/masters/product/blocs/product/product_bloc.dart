@@ -1,8 +1,8 @@
 import 'package:wolkk_core/wolkk_core.dart';
 
 import '../../../../utils/transformer.dart';
-import '../../models/product/product_model.dart';
-import '../../repositories/remote/product_remote_repository.dart';
+import '../../models/models.dart';
+import '../../repositories/repositories.dart';
 
 part 'product_bloc.freezed.dart';
 part 'product_event.dart';
@@ -10,14 +10,16 @@ part 'product_state.dart';
 
 @singleton
 class ProductBloc extends Bloc<ProductEvent, ProductState> {
-  ProductBloc({required this.repository})
-      : super(const ProductState.initial()) {
+  ProductBloc({
+    required this.productLocalRepository,
+    required this.productRemoteRepository,
+  }) : super(const ProductState.initial()) {
     on<ProductFetchEvent>(_fetch, transformer: Transformer.getEvent());
-    // on<ProductSearchEvent>(_search, transformer: Transformer.getEvent());
   }
 
+  final ProductLocalRepository productLocalRepository;
+  final ProductRemoteRepository productRemoteRepository;
   List<ProductModel> products = [];
-  final ProductRemoteRepository repository;
 
   // Future<void> _search(
   //   ProductSearchEvent event,
@@ -68,14 +70,14 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
   ) async {
     emit(const ProductLoadingState());
     try {
-      await repository.fetch(path: event.path).then(
+      await productLocalRepository.fetch(path: event.path).then(
         (result) {
           result.fold(
             (l) {
               if (l is ProductFailureState) {
                 emit(
                   ProductFailureState(
-                    code: 'SERVER FAILURE',
+                    code: 'LOCAL_FAILURE',
                     message: l.message,
                   ),
                 );
@@ -89,7 +91,7 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
               if (r.isEmpty) {
                 emit(
                   const ProductFailureState(
-                    code: 'NO DATA FAILURE',
+                    code: 'NO_DATA_FAILURE',
                     message: 'No Data Found...',
                   ),
                 );

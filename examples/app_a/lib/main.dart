@@ -1,6 +1,6 @@
 import 'package:wolkk_modules/wolkk_modules.dart';
 
-import 'pages/main_page.dart';
+import 'ui/pages/main_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

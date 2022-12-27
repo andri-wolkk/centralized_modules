@@ -23,7 +23,7 @@ class ProductModel with _$ProductModel {
     @Default(0) double maxPrice,
     @Default(0) double minPrice,
     required String name,
-    required String number,
+    @Default('') String number,
     @Default([]) List<PriceModel> prices,
     @Default([]) List<StockModel> stocks,
     @Default([]) List<TagModel> tags,

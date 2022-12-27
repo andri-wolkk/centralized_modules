@@ -1,7 +1,6 @@
 import 'package:wolkk_core/wolkk_core.dart';
 
-import '../../../../../../masters/product/models/product/product_model.dart';
-import '../../../../../../masters/product/ui/widgets/product_card_widget.dart';
+import '../../../../../../masters/masters.dart';
 
 class CatalogPanel extends StatelessWidget {
   const CatalogPanel({super.key, required this.products});

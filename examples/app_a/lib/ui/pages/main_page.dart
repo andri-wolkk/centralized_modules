@@ -19,8 +19,13 @@ class _MainPageState extends State<MainPage> {
   @override
   void initState() {
     super.initState();
+    // remote
+    // GetIt.I<ProductBloc>().add(
+    //   const ProductEvent.fetch(path: '/products'),
+    // );
+    // local
     GetIt.I<ProductBloc>().add(
-      const ProductEvent.fetch(path: '/products'),
+      const ProductEvent.fetch(path: 'assets/datasets/products.json'),
     );
   }
 
@@ -73,20 +78,7 @@ class _MainPageState extends State<MainPage> {
                           Text('Image : ${product.image}'),
                         ],
                       ),
-                      fetched: (products) => GridView.count(
-                        scrollDirection: Axis.vertical,
-                        childAspectRatio:
-                            (MediaQuery.of(context).size.height / 2) /
-                                (MediaQuery.of(context).size.width / 2),
-                        crossAxisCount: 4,
-                        mainAxisSpacing: 15.w,
-                        crossAxisSpacing: 15.w,
-                        physics: const AlwaysScrollableScrollPhysics(),
-                        children: products
-                            .map((product) =>
-                                ProductCardWidget(product: product))
-                            .toList(),
-                      ),
+                      fetched: (products) => CatalogPanel(products: products),
                     ),
                   ),
                 ),

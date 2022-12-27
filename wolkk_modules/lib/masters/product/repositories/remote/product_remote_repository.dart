@@ -1,7 +1,8 @@
 import 'package:wolkk_core/wolkk_core.dart';
 
 import '../../../../api/api.dart';
-import '../../../masters.dart';
+import '../../models/models.dart';
+import 'image_remote_repository.dart';
 
 abstract class ProductRemoteRepository {
   Future<Either<ServerFailure, List<ProductModel>>> fetch({

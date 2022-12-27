@@ -1,7 +1,7 @@
 import 'package:wolkk_core/wolkk_core.dart';
 
 import '../../../../utils/transformer.dart';
-import '../../repositories/remote/image_remote_repository.dart';
+import '../../repositories/repositories.dart';
 
 part 'image_bloc.freezed.dart';
 part 'image_event.dart';
