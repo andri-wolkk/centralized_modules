@@ -1,3 +1,3 @@
-export 'pages/core_page.dart';
-export 'panels/base_panel.dart';
-export 'panels/core_panel.dart';
+export 'pages/pages.dart';
+export 'panels/panels.dart';
+export 'widgets/widgets.dart';

@@ -1,1 +1,2 @@
-export 'panels/header_panel.dart';
+export 'panels/panels.dart';
+export 'widgets/widgets.dart';

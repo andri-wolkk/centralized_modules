@@ -1,2 +1,2 @@
-export 'base/base_model.dart';
-export 'panel/panel_model.dart';
+export 'base/base.dart';
+export 'panel/panel.dart';

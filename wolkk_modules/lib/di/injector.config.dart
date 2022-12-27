@@ -10,15 +10,15 @@ import 'package:injectable/injectable.dart' as _i2;
 import 'package:wolkk_core/wolkk_core.dart' as _i3;
 import 'package:wolkk_modules/api/api.dart' as _i7;
 import 'package:wolkk_modules/api/services/api_service.dart' as _i5;
-import 'package:wolkk_modules/cubit/module/module_cubit.dart' as _i8;
-import 'package:wolkk_modules/modules/modules.dart' as _i11;
-import 'package:wolkk_modules/modules/product/bloc/image/image_bloc.dart'
+import 'package:wolkk_modules/cubits/module/module_cubit.dart' as _i8;
+import 'package:wolkk_modules/masters/masters.dart' as _i11;
+import 'package:wolkk_modules/masters/product/blocs/image/image_bloc.dart'
     as _i12;
-import 'package:wolkk_modules/modules/product/bloc/product/product_bloc.dart'
+import 'package:wolkk_modules/masters/product/blocs/product/product_bloc.dart'
     as _i13;
-import 'package:wolkk_modules/modules/product/repositories/remote/image_remote_repository.dart'
+import 'package:wolkk_modules/masters/product/repositories/remote/image_remote_repository.dart'
     as _i6;
-import 'package:wolkk_modules/modules/product/repositories/remote/product_remote_repository.dart'
+import 'package:wolkk_modules/masters/product/repositories/remote/product_remote_repository.dart'
     as _i10;
 import 'package:wolkk_modules/repositories/module/local/module_local_repository.dart'
     as _i4;

@@ -1,1 +1,2 @@
-export 'product/product.dart';
+export 'cashier/cashier.dart';
+export 'inventory/inventory.dart';
