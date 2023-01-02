@@ -1,5 +1,4 @@
 export 'code/code.dart';
-export 'commodity_group/commodity_group.dart';
 export 'description/description.dart';
 export 'image/image.dart';
 export 'price/price.dart';

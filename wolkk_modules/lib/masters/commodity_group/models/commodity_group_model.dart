@@ -9,6 +9,7 @@ class CommodityGroupModel with _$CommodityGroupModel {
     required String id,
     required String name,
     required String number,
+    CommodityGroupModel? parentCommodityGroup,
   }) = _CommodityGroupModel;
 
   factory CommodityGroupModel.fromJson(Map<String, dynamic> json) =>

@@ -26,8 +26,29 @@ class App extends StatelessWidget {
       builder: (context, state) {
         return MultiBlocProvider(
           providers: [
+            BlocProvider.value(value: GetIt.I<CatalogBloc>()),
+            BlocProvider.value(
+              value: GetIt.I<CommodityGroupBloc>()
+                ..add(
+                  const CommodityGroupInitEvent(
+                    path: 'assets/datasets/commodity_groups.json',
+                  ),
+                )
+                ..add(
+                  const CommodityGroupFetchEvent(),
+                ),
+            ),
+            BlocProvider.value(value: GetIt.I<CommodityGroupHierarchyBloc>()),
             BlocProvider.value(value: GetIt.I<ImageBloc>()),
-            BlocProvider.value(value: GetIt.I<ProductBloc>()),
+            BlocProvider.value(
+              value: GetIt.I<ProductBloc>()
+                ..add(
+                  const ProductInitEvent(path: 'assets/datasets/products.json'),
+                )
+                ..add(
+                  const ProductFetchEvent(),
+                ),
+            ),
           ],
           child: MaterialApp(
             useInheritedMediaQuery: true,

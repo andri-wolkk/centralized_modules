@@ -1,7 +1,9 @@
-import 'package:wolkk_modules/wolkk_modules.dart';
+import 'package:wolkk_core/wolkk_core.dart';
 
-class ProductCardWidget extends StatelessWidget {
-  const ProductCardWidget({super.key, required this.product});
+import '../../models/models.dart';
+
+class ProductCatalogWidget extends StatelessWidget {
+  const ProductCatalogWidget({super.key, required this.product});
 
   final ProductModel product;
 
@@ -13,7 +15,7 @@ class ProductCardWidget extends StatelessWidget {
       padding: EdgeInsets.all(8.w),
       decoration: BoxDecoration(
         border: Border.all(color: Colors.black, width: 0.5.w),
-        borderRadius: const BorderRadius.all(Radius.circular(5)),
+        borderRadius: BorderRadius.all(Radius.circular(5.w)),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -23,9 +25,7 @@ class ProductCardWidget extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 border: Border.all(width: 0.5.w, color: Colors.transparent),
-                borderRadius: const BorderRadius.all(
-                  Radius.circular(5),
-                ),
+                borderRadius: BorderRadius.all(Radius.circular(5.w)),
                 image: DecorationImage(
                   image: product.imageBinary.isNotEmpty
                       ? Image.memory(base64Decode(product.imageBinary)).image
@@ -51,13 +51,6 @@ class ProductCardWidget extends StatelessWidget {
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
           ),
-          // Text(
-          //   product.stocks.isNotEmpty
-          //       ? 'Stock : ${product.stocks[0].amount.actual}'
-          //       : 'Stock : 0',
-          //   maxLines: 1,
-          //   overflow: TextOverflow.ellipsis,
-          // )
         ],
       ),
     );

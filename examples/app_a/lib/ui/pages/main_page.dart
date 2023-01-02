@@ -1,33 +1,7 @@
 import 'package:wolkk_modules/wolkk_modules.dart';
 
-class MainPage extends StatefulWidget {
+class MainPage extends StatelessWidget {
   const MainPage({super.key});
-
-  @override
-  State<MainPage> createState() => _MainPageState();
-}
-
-class _MainPageState extends State<MainPage> {
-  final TextEditingController _searchController = TextEditingController();
-
-  @override
-  void dispose() {
-    _searchController.dispose();
-    super.dispose();
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    // remote
-    // GetIt.I<ProductBloc>().add(
-    //   const ProductEvent.fetch(path: '/products'),
-    // );
-    // local
-    GetIt.I<ProductBloc>().add(
-      const ProductEvent.fetch(path: 'assets/datasets/products.json'),
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,56 +9,7 @@ class _MainPageState extends State<MainPage> {
       corePanel: CorePanel(
         panel: PanelModel(
           header: const HeaderPanel(),
-          main: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                SizedBox(
-                  height: 50,
-                  child: TextField(
-                    controller: _searchController,
-                    decoration: const InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: 'Search',
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 8,
-                ),
-                Expanded(
-                  child: BlocBuilder<ProductBloc, ProductState>(
-                    // builder: (context, state) {
-                    //   log('[debug] state : $state');
-                    //   return Container(
-                    //     color: Colors.amber,
-                    //   );
-                    // },
-                    builder: (context, state) => state.maybeWhen(
-                      orElse: () {
-                        return const Center(
-                          child: SizedBox(),
-                        );
-                      },
-                      loading: () => const Center(
-                        child: CircularProgressIndicator(),
-                      ),
-                      loaded: (product) => Column(
-                        children: [
-                          Text('Id : ${product.id}'),
-                          Text('Name : ${product.name}'),
-                          Text('Image : ${product.image}'),
-                        ],
-                      ),
-                      fetched: (products) => CatalogPanel(products: products),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+          main: const CatalogPanel(),
           navigation: Container(
             color: Colors.redAccent,
           ),

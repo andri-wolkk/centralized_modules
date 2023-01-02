@@ -1,0 +1,320 @@
+{
+    "status": "success",
+    "code": 200,
+    "results": [
+        {
+            "active": true,
+            "id": "012485ce-a5c7-4a8a-90b9-312e9dd66366",
+            "revision": 13,
+            "number": "9",
+            "name": "Hunde Snacks"
+        },
+        {
+            "active": true,
+            "id": "0b545845-8e85-4046-9e12-430b1455ed44",
+            "revision": 40,
+            "number": "28",
+            "name": "TabiloBrötchen",
+            "parentCommodityGroup": {
+                "id": "6599d864-cc92-40f6-9443-06676609bb6b",
+                "name": "Tabilo",
+                "number": "24"
+            }
+        },
+        {
+            "active": true,
+            "id": "0f15434c-5588-4355-91a4-1a86dec5799c",
+            "revision": 38,
+            "number": "26",
+            "name": "TabiloGetränke",
+            "parentCommodityGroup": {
+                "id": "6599d864-cc92-40f6-9443-06676609bb6b",
+                "name": "Tabilo",
+                "number": "24"
+            }
+        },
+        {
+            "active": true,
+            "id": "187bce9f-0afb-4f7c-ad54-48fbb0ab80d9",
+            "revision": 54,
+            "number": "5678",
+            "name": "Pants",
+            "parentCommodityGroup": {
+                "id": "722c0362-3d63-4fcb-b7ba-9f1ccd5b064b",
+                "name": "Fashion",
+                "number": "1234"
+            }
+        },
+        {
+            "active": true,
+            "id": "1c565260-0b78-46b6-bfc2-3a2a41a376be",
+            "revision": 3,
+            "number": "3",
+            "name": "Nassnahrung für Hunde"
+        },
+        {
+            "active": true,
+            "id": "2756bb7e-25f6-43d5-a157-995eeb3d3d36",
+            "revision": 26,
+            "number": "16",
+            "name": "Badmöbel"
+        },
+        {
+            "active": true,
+            "id": "2d6595cc-d3af-4729-a54c-b2a3a15e5403",
+            "revision": 25,
+            "number": "15",
+            "key": "Dy",
+            "name": "Dairy"
+        },
+        {
+            "active": true,
+            "id": "2df36a35-1860-4756-831b-f40b7c77672e",
+            "revision": 27,
+            "number": "17",
+            "name": "Order"
+        },
+        {
+            "active": true,
+            "id": "4003b29e-6892-4c4c-95cb-96ee702986fd",
+            "revision": 37,
+            "number": "25",
+            "name": "TabiloBurger",
+            "parentCommodityGroup": {
+                "id": "6599d864-cc92-40f6-9443-06676609bb6b",
+                "name": "Tabilo",
+                "number": "24"
+            }
+        },
+        {
+            "active": true,
+            "id": "45a1172e-c0e7-4e8f-959b-6f4278ffa57e",
+            "revision": 31,
+            "number": "21",
+            "name": "Backwaren",
+            "parentCommodityGroup": {
+                "id": "fb2715ea-aef2-4089-8710-274218ec2a10",
+                "name": "Lebensmittel",
+                "number": "18"
+            }
+        },
+        {
+            "active": true,
+            "id": "45dd4ca4-4f8f-4f40-b692-9d4501499f15",
+            "revision": 1,
+            "number": "1",
+            "name": "Getränke"
+        },
+        {
+            "active": true,
+            "id": "4b359a68-e8aa-48a6-b300-5cedd4ceb613",
+            "revision": 12,
+            "number": "8",
+            "name": "Royal Canin - Katzen",
+            "parentCommodityGroup": {
+                "id": "97dc8ced-799a-4beb-8e30-86b55f39890a",
+                "name": "Royal Canin",
+                "number": "6"
+            }
+        },
+        {
+            "active": true,
+            "id": "4ee07362-e307-4059-931c-bf659ac96fb4",
+            "revision": 32,
+            "number": "22",
+            "name": "Spirituosen"
+        },
+        {
+            "active": true,
+            "id": "597f6bd5-1da7-422c-b591-8bb39e9b7fcf",
+            "revision": 46,
+            "number": "73",
+            "name": "V-Neck",
+            "parentCommodityGroup": {
+                "id": "9719edd9-7408-444c-85cc-21767e704217",
+                "name": "T-Shirt",
+                "number": "72"
+            }
+        },
+        {
+            "active": true,
+            "id": "5bf0b9b8-94a5-4a0c-a6c6-a505fae104cf",
+            "revision": 33,
+            "number": "23",
+            "name": "SANIFAIR Einlösung"
+        },
+        {
+            "active": true,
+            "id": "6599d864-cc92-40f6-9443-06676609bb6b",
+            "revision": 35,
+            "number": "24",
+            "name": "Tabilo"
+        },
+        {
+            "active": true,
+            "id": "683d653b-9e76-43ce-9246-70f043d6d551",
+            "revision": 30,
+            "number": "20",
+            "name": "Gemüse",
+            "parentCommodityGroup": {
+                "id": "fb2715ea-aef2-4089-8710-274218ec2a10",
+                "name": "Lebensmittel",
+                "number": "18"
+            }
+        },
+        {
+            "active": true,
+            "id": "722c0362-3d63-4fcb-b7ba-9f1ccd5b064b",
+            "revision": 53,
+            "number": "1234",
+            "name": "Fashion"
+        },
+        {
+            "active": true,
+            "id": "81b3c1b5-5396-4362-857f-82b8f87b7c86",
+            "revision": 55,
+            "number": "9101",
+            "name": "Cargo",
+            "parentCommodityGroup": {
+                "id": "187bce9f-0afb-4f7c-ad54-48fbb0ab80d9",
+                "name": "Pants",
+                "number": "5678"
+            }
+        },
+        {
+            "active": true,
+            "id": "833d2f13-e4f3-4b16-b89a-b7b78351ff55",
+            "revision": 5,
+            "number": "4",
+            "name": "Trockennahrung für Hunde"
+        },
+        {
+            "active": true,
+            "id": "87169b2f-1859-44bf-84a2-af9814dafa85",
+            "revision": 44,
+            "number": "71",
+            "name": "Ultraboost Black",
+            "parentCommodityGroup": {
+                "id": "fcdd19e1-cbfd-4ceb-a964-0515f620a9c0",
+                "name": "Ultraboost",
+                "number": "70"
+            }
+        },
+        {
+            "active": true,
+            "id": "88fc2b12-a62d-42e8-847d-3e3bfcb0362a",
+            "revision": 6,
+            "number": "5",
+            "name": "Nassnahrung für Katzen"
+        },
+        {
+            "active": true,
+            "id": "89f8ec72-822d-46ac-b3bb-a638defa131d",
+            "revision": 57,
+            "number": "1121",
+            "name": "Chino",
+            "parentCommodityGroup": {
+                "id": "187bce9f-0afb-4f7c-ad54-48fbb0ab80d9",
+                "name": "Pants",
+                "number": "5678"
+            }
+        },
+        {
+            "active": true,
+            "id": "8ab63cb6-1025-43f9-856a-ca136a5af118",
+            "revision": 2,
+            "number": "2",
+            "name": "Retail"
+        },
+        {
+            "active": true,
+            "id": "9408f8f9-ffb8-4553-ab1f-63dd9356697c",
+            "revision": 29,
+            "number": "19",
+            "name": "Obst",
+            "parentCommodityGroup": {
+                "id": "fb2715ea-aef2-4089-8710-274218ec2a10",
+                "name": "Lebensmittel",
+                "number": "18"
+            }
+        },
+        {
+            "active": true,
+            "id": "9719edd9-7408-444c-85cc-21767e704217",
+            "revision": 45,
+            "number": "72",
+            "name": "T-Shirt"
+        },
+        {
+            "active": true,
+            "id": "97dc8ced-799a-4beb-8e30-86b55f39890a",
+            "revision": 7,
+            "number": "6",
+            "name": "Royal Canin"
+        },
+        {
+            "active": true,
+            "id": "98bb2404-7ce6-4e95-a56e-7c0af28a56b9",
+            "revision": 39,
+            "number": "27",
+            "name": "TabiloPasta",
+            "parentCommodityGroup": {
+                "id": "6599d864-cc92-40f6-9443-06676609bb6b",
+                "name": "Tabilo",
+                "number": "24"
+            }
+        },
+        {
+            "active": true,
+            "id": "c63da4c2-ed05-4c70-8eb0-6fcd92800b19",
+            "revision": 41,
+            "number": "29",
+            "name": "Royal Canin BCA",
+            "parentCommodityGroup": {
+                "id": "cd1b45f2-8987-4000-b319-b065d0989e68",
+                "name": "Royal Canin - Hunde",
+                "number": "7"
+            }
+        },
+        {
+            "active": true,
+            "id": "cd1b45f2-8987-4000-b319-b065d0989e68",
+            "revision": 16,
+            "number": "7",
+            "name": "Royal Canin - Hunde",
+            "parentCommodityGroup": {
+                "id": "97dc8ced-799a-4beb-8e30-86b55f39890a",
+                "name": "Royal Canin",
+                "number": "6"
+            }
+        },
+        {
+            "active": true,
+            "id": "fb2715ea-aef2-4089-8710-274218ec2a10",
+            "revision": 28,
+            "number": "18",
+            "name": "Lebensmittel"
+        },
+        {
+            "active": true,
+            "id": "fcdd19e1-cbfd-4ceb-a964-0515f620a9c0",
+            "revision": 43,
+            "number": "70",
+            "name": "Ultraboost",
+            "parentCommodityGroup": {
+                "id": "ff0faf81-a9f2-4956-b3ee-b61d63a30524",
+                "name": "Shoes",
+                "number": "69"
+            }
+        },
+        {
+            "active": true,
+            "id": "ff0faf81-a9f2-4956-b3ee-b61d63a30524",
+            "revision": 42,
+            "number": "69",
+            "name": "Shoes"
+        }
+    ],
+    "resultsOfPage": 33,
+    "resultsTotal": 33
+}

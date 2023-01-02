@@ -15,54 +15,13 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
     required this.productRemoteRepository,
   }) : super(const ProductState.initial()) {
     on<ProductFetchEvent>(_fetch, transformer: Transformer.getEvent());
+    on<ProductInitEvent>(_init, transformer: Transformer.getEvent());
   }
 
+  String path = '';
   final ProductLocalRepository productLocalRepository;
   final ProductRemoteRepository productRemoteRepository;
   List<ProductModel> products = [];
-
-  // Future<void> _search(
-  //   ProductSearchEvent event,
-  //   Emitter<ProductState> emit,
-  // ) async {
-  //   emit(const ProductLoadingState());
-  //   try {
-  //     final result = await repository.search(keywords: event.keywords);
-  //     result.fold(
-  //       (l) {
-  //         if (l is ProductFailureState) {
-  //           emit(
-  //             ProductFailureState(
-  //               code: 'SERVER FAILURE',
-  //               message: l.message,
-  //             ),
-  //           );
-  //         }
-  //       },
-  //       (r) {
-  //         if (r.isNotEmpty) {
-  //           products = r;
-  //           emit(ProductFetchedState(products: products));
-  //         }
-  //         if (r.isEmpty) {
-  //           emit(
-  //             const ProductFailureState(
-  //               code: 'NO DATA FAILURE',
-  //               message: 'No Data Found...',
-  //             ),
-  //           );
-  //         }
-  //       },
-  //     );
-  //   } catch (e) {
-  //     emit(
-  //       ProductFailureState(
-  //         code: 'UNEXPECTED FAILURE',
-  //         message: e.toString(),
-  //       ),
-  //     );
-  //   }
-  // }
 
   Future<void> _fetch(
     ProductFetchEvent event,
@@ -70,7 +29,7 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
   ) async {
     emit(const ProductLoadingState());
     try {
-      await productLocalRepository.fetch(path: event.path).then(
+      await productLocalRepository.fetch(path: path).then(
         (result) {
           result.fold(
             (l) {
@@ -108,5 +67,9 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
         ),
       );
     }
+  }
+
+  void _init(ProductInitEvent event, Emitter<ProductState> emit) {
+    path = event.path;
   }
 }

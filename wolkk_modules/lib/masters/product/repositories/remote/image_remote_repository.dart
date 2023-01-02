@@ -30,8 +30,8 @@ class ImageRemoteRepositoryImpl implements ImageRemoteRepository {
       } else {
         return Left(
           ServerFailure(
-            code: response.statusCode.toString(),
-            message: response.statusMessage!,
+            code: 'UNEXPECTED_FAILURE',
+            message: 'Failed to get image in remote source...',
             statusCode: response.statusCode!,
           ),
         );

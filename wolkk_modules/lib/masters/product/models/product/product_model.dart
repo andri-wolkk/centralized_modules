@@ -1,7 +1,7 @@
 import 'package:wolkk_core/wolkk_core.dart';
 
+import '../../../commodity_group/commodity_group.dart';
 import 'code/code_model.dart';
-import 'commodity_group/commodity_group_model.dart';
 import 'description/description_model.dart';
 import 'image/image_model.dart';
 import 'price/price_model.dart';

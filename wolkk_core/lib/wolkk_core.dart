@@ -1,5 +1,6 @@
 library core;
 
+export 'dart:async';
 export 'dart:convert';
 export 'dart:developer';
 

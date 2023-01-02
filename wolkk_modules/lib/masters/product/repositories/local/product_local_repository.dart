@@ -17,11 +17,9 @@ class ProductLocalRepositoryImpl implements ProductLocalRepository {
     try {
       final response = await rootBundle.loadString(path);
       if (response.isNotEmpty) {
-        List decodedResult = jsonDecode(response)['results'];
+        List results = jsonDecode(response)['results'];
         List<ProductModel> products = [];
-        products.addAll(decodedResult.map((e) {
-          return ProductModel.fromJson(e);
-        }));
+        products.addAll(results.map((e) => ProductModel.fromJson(e)));
         return Right(products);
       } else {
         return const Left(
